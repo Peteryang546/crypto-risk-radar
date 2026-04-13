@@ -1,0 +1,23 @@
+{
+  "last_update": "2026-04-13T13:05:57.242503+00:00",
+  "risk_score": 0,
+  "risk_level": "Low",
+  "metrics": {
+    "total_bid_depth": 0,
+    "ask_uniformity": 1.0,
+    "best_bid": 0,
+    "best_ask": 0,
+    "spread": 0,
+    "bid_depth_decay": 0,
+    "exchange_netflow": 0,
+    "dormant_count": 0,
+    "dormant_details": [],
+    "social_acceleration": 1.0,
+    "social_data": {
+      "acceleration": 1.0,
+      "sentiment": "Normal",
+      "risk_level": "Low"
+    }
+  },
+  "signals": []
+}

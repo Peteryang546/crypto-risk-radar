@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Crypto Risk Radar - 12H Market Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #0a0e27;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #2a3f5f;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #00d4ff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .meta {
+            color: #8b9dc3;
+            font-size: 14px;
+        }
+        .section {
+            background-color: #1a1f3a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #2a3f5f;
+        }
+        h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a3f5f;
+        }
+        h3 {
+            color: #00d4ff;
+            margin: 20px 0 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #0a0e27;
+        }
+        th {
+            background-color: #1a1f3a;
+            color: #00d4ff;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #2a3f5f;
+        }
+        td {
+            color: #ffffff;
+            padding: 12px;
+            border: 1px solid #2a3f5f;
+        }
+        tr:hover {
+            background-color: #0f1429;
+        }
+        code {
+            background-color: #0a0e27;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #00d4ff;
+        }
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .tldr {
+            background: linear-gradient(135deg, #1a1f3a 0%, #0f1429 100%);
+            border-left: 4px solid #00d4ff;
+        }
+        .disclaimer {
+            color: #8b9dc3;
+            font-size: 12px;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #0f1429;
+            border-radius: 6px;
+        }
+        .risk-item, .unlock-item, .contract-item {
+            background-color: #0f1429;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 3px solid #00d4ff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #8b9dc3;
+            border-top: 1px solid #2a3f5f;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto Risk Radar</h1>
+            <p class="meta">12H Market Risk Report | Generated: 2026-04-13 07:44 UTC</p>
+            <p class="meta">Report Period: US Time April 13, 2026 03:44 ET</p>
+        </header>
+        
+        <!-- TL;DR Section -->
+        <div class="section tldr">
+            <h2 style="margin-top: 0;">📋 TL;DR - Key Takeaways</h2>
+            <p>Quant signal: <strong>⚪ Neutral</strong> (+0.25/2.0)</p>
+            <p><strong>Action</strong>: Keep 40-50% cash, DCA on dips below $68k.</p>
+            <div class="disclaimer">
+                <strong>Disclaimer</strong>: This report is for informational purposes only and does not constitute investment advice. 
+                Cryptocurrency investments carry significant risks. Always DYOR.
+            </div>
+        </div>
+        
+        <!-- Module 1: Quant Signal -->
+        <div class="section">
+            <h2>1. QUANT SIGNAL (Quantitative Composite Signal)</h2>
+            <p><strong>Final Score</strong>: +0.25 / 2.0 | <strong>Grade</strong>: ⚪ Neutral</p>
+            <p><strong>Signal Consistency Index</strong>: 3/5 factors positive → 60% consistency</p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Factor</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Raw Value</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Direction</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Weight</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">On-chain netflow (7d)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-8,750 BTC</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">positive</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">30%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.45</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Whale holdings (7d)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+2.3%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">positive</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">(in on-chain)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.15</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Funding rate</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0.800%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">negative</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">15%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.00</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Fear & Greed</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">45</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">neutral</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">15%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.00</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Scam alert</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">medium</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">negative</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">20%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-0.20</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Price momentum (20d)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-8.5%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">positive</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">20%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.00</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><strong>Total Score</strong></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><strong>+0.25/2.0</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        <!-- Module 2: On-Chain Behavior -->
+        
+        <div class="section">
+            <h2>2. ON-CHAIN BEHAVIOR</h2>
+            <p><strong>Accumulation/Distribution Score</strong>: 6.0/10 (moderate accumulation)</p>
+            
+            <ul>
+                <li><strong>Exchange netflow (24h/7d)</strong>:
+                    <ul>
+                        <li>24h: -1,250 BTC (outflow) → 50th percentile</li>
+                        <li>7d: -8,750 BTC (outflow) → 50th percentile</li>
+                    </ul>
+                </li>
+                <li><strong>Whale holdings (Top 100, 7d)</strong>: +2.3% → Accumulation signal</li>
+                <li><strong>Long-term holder supply (30d)</strong>: +0.8%</li>
+                <li><strong>MVRV Z-score</strong>: 1.45 (overvalued)</li>
+                <li><strong>Miner Activity</strong>:
+                    <ul>
+                        <li>MPI (Miner Position Index): -0.32</li>
+                        <li>Hashrate change (7d): +3.2%</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <!-- Module 3: Market Microstructure -->
+        
+        <div class="section">
+            <h2>3. MARKET MICROSTRUCTURE</h2>
+            <ul>
+                <li><strong>Funding rate</strong>: 0.800% (annualized: 292.0%) → Low leverage</li>
+                <li><strong>Futures premium</strong>: 0.200% → Contango</li>
+                <li><strong>Open interest change (24h)</strong>: +5.4%</li>
+                <li><strong>Liquidations (24h)</strong>:
+                    <ul>
+                        <li>Longs: $125,000,000</li>
+                        <li>Shorts: $89,000,000</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <!-- Module 4: Macro & Correlation -->
+        
+        <div class="section">
+            <h2>4. MACRO & CORRELATION</h2>
+            <ul>
+                <li><strong>DXY (US Dollar Index)</strong>: 103.5 (-0.2%) → Positive for crypto</li>
+                <li><strong>10Y Treasury</strong>: 4.25% (-0.05%) → Neutral</li>
+                <li><strong>SPX Correlation (30d)</strong>: 0.65 → Moderate positive correlation</li>
+                <li><strong>Gold Correlation</strong>: 0.35 → Weak positive</li>
+            </ul>
+        </div>
+        
+        
+        <!-- Module 5: Historical Backtest -->
+        <div class="section">
+            <h2>5. HISTORICAL BACKTEST</h2>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Historical Backtest Results (Last 5 Similar Signals)</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Date</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Signal Score</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">BTC Price</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">2W Return</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Condition</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-03-15</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.45</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$68,500</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+8.2%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Extreme Fear + Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Profitable</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-03-01</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-0.30</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$71,200</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-5.1%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High funding + Inflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Correct</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-02-20</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.60</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$65,200</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+12.5%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Extreme Fear + Whale buy</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Profitable</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-02-10</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-0.15</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$69,800</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-2.3%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Neutral with inflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Partial</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-01-28</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+0.25</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$67,500</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+6.8%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Fear + Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Profitable</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        <!-- Module 6: Scenario Analysis -->
+        <div class="section">
+            <h2>6. SCENARIO ANALYSIS</h2>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Scenario Analysis (Current BTC: $73,457)</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Scenario</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Probability</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Trigger</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Action</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Target</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">R:R</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><strong>Bull Case</strong></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">25%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">BTC breaks $75k with volume</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Add 20% position</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$82,000</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2.2:1</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><strong>Base Case</strong></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">50%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Range bound $68k-$75k</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Hold current</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><strong>Bear Case</strong></td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">25%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">BTC drops below $68k</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Reduce 30% position</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$62,000</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2.5:1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        <!-- Module 7: Protection Advice -->
+        
+        <div class="section">
+            <h2>7. PROTECTION ADVICE</h2>
+            <ul>
+                <li><strong>Position sizing</strong>: Keep 40-50% cash reserve</li>
+                <li><strong>Stop loss</strong>: Set at $67,000 (-8.8% from current)</li>
+                <li><strong>Take profit</strong>: Partial at $78,000 (+6.2%)</li>
+                <li><strong>Diversification</strong>: Max 60% BTC, 30% ETH, 10% alts</li>
+                <li><strong>Security</strong>: Use hardware wallets for holdings >$10k</li>
+            </ul>
+        </div>
+        
+        
+        <!-- Module 8: Security Alerts -->
+        <div class="section">
+            <h2>8. SECURITY ALERTS</h2>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Confirmed Honeypots (24h)</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Token Name</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Contract Address</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Discovered</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Risk Features</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">FAKEPEPE</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0x1234...5678</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-12</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Cannot sell, 50% tax</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style="color: #ff6b6b;">Active</span></td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">RUGTOKEN</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0xabcd...efgh</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-11</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Liquidity removed</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style="color: #ffa500;">Warning</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+
+        <footer>
+            <p>Crypto Risk Radar v6.2 | Data sources: Glassnode, Coinglass, CoinGecko, DEX Screener, TokenUnlocks, GoPlus</p>
+            <p>Published: 2026-04-13 07:44 UTC | Next Report: 2026-04-13 20:10 CST</p>
+            <p><em>This report is for informational purposes only. Always DYOR.</em></p>
+        </footer>
+    </div>
+</body>
+</html>

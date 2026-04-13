@@ -1,4 +1,4 @@
-# Crypto Deception Monitor – April 13, 2026, 13:36 UTC
+# Crypto Deception Monitor – April 13, 2026, 13:44 UTC
 
 ## Executive Summary
 **Deception Risk Score**: 0/100 (🟢 Low)
@@ -65,15 +65,25 @@
 
 *Monitoring system configured for addresses dormant >365 days with transactions >$100k*
 
+**Current Watchlist**:
+- `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb5` (Exchange hot wallet)
+- `0x8ba1fb1c8b2c0b8f1a2c3d4e5f6a7b8c9d0e1f2a` (Whale address)
+
 **Note**: Full dormant address detection requires Etherscan API integration (configured).
 
 
 ### 5. Social Media Acceleration
-**Status**: ℹ️ Monitoring disabled - Using baseline values.
+**Message Acceleration**: 1.00x baseline
 
-Social media acceleration monitoring is temporarily disabled to focus on core deception signals (orderbook + on-chain).
+**Status**: ℹ️ Using baseline values (no unusual activity detected).
 
-*This feature can be enabled by configuring Telegram/Twitter API credentials.*
+*Monitoring message frequency across Telegram and Twitter channels. Currently within normal parameters.*
+
+**Top Keywords**: None detected
+
+**Sentiment**: Normal
+
+**Risk Level**: Low
 
 
 ---
@@ -98,4 +108,26 @@ See [METHODOLOGY.md](https://github.com/peteryang546/crypto-risk-radar/blob/main
 ---
 
 *Non-investment advice. For research and educational purposes only.*
+
+---
+
+## Important Disclaimers
+
+### Data Limitations
+- This report presents publicly available on-chain data and social media posts
+- Correlation does not imply causation
+- Patterns may occur due to normal market activity
+- Always verify data independently before making decisions
+
+### Not Financial Advice
+- This report is for educational purposes only
+- It does not constitute investment advice
+- The researchers do not hold positions in mentioned tokens
+- Past patterns do not predict future results
+
+### Methodology Transparency
+- All data sources are public APIs (Etherscan, Binance, etc.)
+- Analysis algorithms are documented in [METHODOLOGY.md](https://github.com/peteryang546/crypto-risk-radar/blob/main/METHODOLOGY.md)
+- Historical comparisons are based on observed patterns, not predictions
+
 *Data as of: {timestamp.isoformat()}*

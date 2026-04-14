@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Risk Radar - Full Market Report</title>
+    <meta name="pubdate" content="2026-04-14T06:52:41">
+    <meta name="frequency" content="8h">
+    <meta name="data_source" content="Etherscan, Binance, CoinGecko, Nitter">
+    <meta name="description" content="10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.">
+    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 06:52 ET</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Crypto Risk Radar - Market Report 2026-04-14",
+      "description": "10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.",
+      "datePublished": "2026-04-14T06:52:41",
+      "creator": {"@type": "Organization", "name": "Crypto Risk Radar"},
+      "variableMeasured": [
+        {"@type": "PropertyValue", "name": "Bid Depth Decay", "value": "19.8%"},
+        {"@type": "PropertyValue", "name": "BTC 24h Change", "value": "2.34%"},
+        {"@type": "PropertyValue", "name": "Dormant Address Count", "value": "2"},
+        {"@type": "PropertyValue", "name": "High Risk Tokens", "value": "2"},
+        {"@type": "PropertyValue", "name": "Quant Score", "value": "0.45/2.0"},
+        {"@type": "PropertyValue", "name": "Security Threats", "value": "8"}
+      ]
+    }
+    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -78,9 +100,21 @@
     <div class="container">
         <header>
             <h1>Crypto Risk Radar</h1>
-            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 02:17 ET</p>
+            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 06:52 ET</p>
             <p style="color: #8b9dc3; font-size: 14px;">10-Module Comprehensive Analysis | Educational Purposes Only</p>
         </header>
+        
+        <!-- Quick Risk Summary for AI Extraction -->
+        <div class="section" style="background: linear-gradient(135deg, #1a1f3a, #0f1429); border-left: 4px solid #00ff88;">
+            <h2>⚡ Quick Risk Summary (Last 8h)</h2>
+            <ul style="margin: 15px 0;">
+                <li>🔴 <strong>Bid Depth Decay</strong>: 19.8% – high support erosion</li>
+                <li>🟠 <strong>Dormant Addresses</strong>: 2 addresses moved $17,160,000 to exchanges</li>
+                <li>🟠 <strong>Token Unlocks</strong>: 3 events upcoming, total value $54,300,000</li>
+                <li>🔴 <strong>Security Threats</strong>: 8 contracts flagged in 24h</li>
+            </ul>
+            <p style="color: #8b9dc3; font-size: 12px;">Quant Score: 0.45/2.0 | Low Risk | Full details below ↓</p>
+        </div>
         
         
         <div class="section">
@@ -505,6 +539,30 @@
             <p style="color: #8b9dc3; font-size: 12px; margin-top: 15px;">
                 <em>Reports are archived after each 8-hour cycle. Use the GitHub link above to browse all historical data.</em>
             </p>
+        </div>
+        
+        <!-- Glossary for AI Understanding -->
+        <div class="section" style="background-color: #0f1429; border: 1px solid #2a3f5f;">
+            <h2>📖 Glossary of Terms</h2>
+            <dl style="display: grid; grid-template-columns: 200px 1fr; gap: 15px; margin-top: 15px;">
+                <dt style="color: #00d4ff; font-weight: bold;">Bid Depth Decay</dt>
+                <dd>Percentage reduction in cumulative bid liquidity within 5% price interval. Higher decay indicates weakening market support.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Ask Uniformity</dt>
+                <dd>Standard deviation of ask sizes divided by mean. Values below 0.1 suggest algorithmic order placement.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Exchange Netflow</dt>
+                <dd>Net BTC transferred to/from exchanges. Positive = inflow (sell pressure), Negative = outflow (accumulation).</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Dormant Address</dt>
+                <dd>Address inactive for >365 days. Sudden activity often precedes large sell orders.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Market Anomaly Index</dt>
+                <dd>Composite score (0-2.0) combining orderbook, netflow, dormant, and social signals. >1.0 indicates elevated risk.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Historical Similarity</dt>
+                <dd>Pattern match to past pump-and-dump events. Higher % = more similar to historical manipulation patterns.</dd>
+            </dl>
         </div>
         
         <footer style="text-align: center; padding: 20px; color: #8b9dc3; font-size: 12px;">

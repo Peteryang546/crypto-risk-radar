@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="pubdate" content="2026-04-14T07:16:46">
+    <meta name="pubdate" content="2026-04-14T07:23:44">
     <meta name="frequency" content="8h">
     <meta name="data_source" content="Etherscan, Binance, CoinGecko, Nitter">
     <meta name="description" content="10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.">
-    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 07:16 ET</title>
+    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 07:23 ET</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
       "name": "Crypto Risk Radar - Market Report 2026-04-14",
       "description": "10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.",
-      "datePublished": "2026-04-14T07:16:46",
+      "datePublished": "2026-04-14T07:23:44",
       "creator": {"@type": "Organization", "name": "Crypto Risk Radar"},
       "variableMeasured": [
         {"@type": "PropertyValue", "name": "Bid Depth Decay", "value": "19.8%"},
@@ -148,7 +148,7 @@
     <div class="container">
         <header>
             <h1>Crypto Risk Radar</h1>
-            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 07:16 ET</p>
+            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 07:23 ET</p>
             <p style="color: #8b9dc3; font-size: 14px;">10-Module Comprehensive Analysis | Educational Purposes Only</p>
         </header>
         

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="pubdate" content="2026-04-14T06:59:37">
+    <meta name="pubdate" content="2026-04-14T07:03:53">
     <meta name="frequency" content="8h">
     <meta name="data_source" content="Etherscan, Binance, CoinGecko, Nitter">
     <meta name="description" content="10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.">
-    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 06:59 ET</title>
+    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 07:03 ET</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
       "name": "Crypto Risk Radar - Market Report 2026-04-14",
       "description": "10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.",
-      "datePublished": "2026-04-14T06:59:37",
+      "datePublished": "2026-04-14T07:03:53",
       "creator": {"@type": "Organization", "name": "Crypto Risk Radar"},
       "variableMeasured": [
         {"@type": "PropertyValue", "name": "Bid Depth Decay", "value": "19.8%"},
@@ -23,6 +23,54 @@
         {"@type": "PropertyValue", "name": "High Risk Tokens", "value": "2"},
         {"@type": "PropertyValue", "name": "Quant Score", "value": "0.45/2.0"},
         {"@type": "PropertyValue", "name": "Security Threats", "value": "8"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Bid Depth Decay and why does it matter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bid Depth Decay measures the percentage reduction in cumulative buy orders within a 5% price range. A decay of 19.8% indicates weakening market support and potential downward pressure. Values above 15% are considered high risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a dormant address awakening mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A dormant address is one that has not transacted for over 365 days. When such addresses become active and transfer funds to exchanges, it often signals potential selling pressure. Currently, 2 dormant addresses have shown activity, with a combined value of $17,160,000."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the Quant Score calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Quant Score is a composite metric ranging from 0 to 2.0, combining orderbook structure, exchange netflow, dormant address activity, and market microstructure signals. The current score of 0.45/2.0 indicates low risk. Scores above 1.0 suggest elevated market manipulation risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are token unlocks and why are they tracked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Token unlocks refer to the release of previously locked tokens to team members, investors, or the community. Large unlocks can create sell pressure and price volatility. This report tracks 3 upcoming unlock events with a total value of $54,300,000 over the next 30 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is this report updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This report is generated automatically every 8 hours (3 times daily) at 06:00, 14:00, and 22:00 EST to align with major market sessions. The next update is scheduled in approximately 8 hours."
+          }
+        }
       ]
     }
     </script>
@@ -100,7 +148,7 @@
     <div class="container">
         <header>
             <h1>Crypto Risk Radar</h1>
-            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 06:59 ET</p>
+            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 07:03 ET</p>
             <p style="color: #8b9dc3; font-size: 14px;">10-Module Comprehensive Analysis | Educational Purposes Only</p>
         </header>
         

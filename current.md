@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="pubdate" content="2026-04-14T07:03:53">
+    <meta name="pubdate" content="2026-04-14T07:16:46">
     <meta name="frequency" content="8h">
     <meta name="data_source" content="Etherscan, Binance, CoinGecko, Nitter">
     <meta name="description" content="10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.">
-    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 07:03 ET</title>
+    <title>Crypto Risk Radar - Full Market Report | 2026-04-14 07:16 ET</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Dataset",
       "name": "Crypto Risk Radar - Market Report 2026-04-14",
       "description": "10-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, and anomaly index.",
-      "datePublished": "2026-04-14T07:03:53",
+      "datePublished": "2026-04-14T07:16:46",
       "creator": {"@type": "Organization", "name": "Crypto Risk Radar"},
       "variableMeasured": [
         {"@type": "PropertyValue", "name": "Bid Depth Decay", "value": "19.8%"},
@@ -148,7 +148,7 @@
     <div class="container">
         <header>
             <h1>Crypto Risk Radar</h1>
-            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 07:03 ET</p>
+            <p style="color: #8b9dc3;">Full Market Analysis Report | April 14, 2026 07:16 ET</p>
             <p style="color: #8b9dc3; font-size: 14px;">10-Module Comprehensive Analysis | Educational Purposes Only</p>
         </header>
         
@@ -406,6 +406,10 @@
         
         <div class="section">
             <h2>6. High Risk Token Watchlist</h2>
+            <p style="background-color: #2a1f1f; border-left: 3px solid #ff6b6b; padding: 10px; margin: 10px 0; color: #ff9999; font-size: 12px;">
+                <strong>⚠️ 示例数据 (Sample Data)</strong>: 本模块当前使用示例代币数据用于演示。生产环境将接入DEX实时数据。
+                <br><em>This module currently uses sample token data for demonstration. Production will use real-time DEX data.</em>
+            </p>
             <p><strong>Tokens Flagged</strong>: 2 | Criteria: Liquidity <$50k, Owner >20%, Risk Score >70</p>
             <div style="overflow-x: auto; margin: 15px 0;">
 <div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">High Risk Token Watchlist</div>
@@ -445,6 +449,10 @@
         
         <div class="section">
             <h2>7. Contract Security Scanner</h2>
+            <p style="background-color: #2a1f1f; border-left: 3px solid #ff6b6b; padding: 10px; margin: 10px 0; color: #ff9999; font-size: 12px;">
+                <strong>⚠️ 示例数据 (Sample Data)</strong>: 本模块当前使用示例合约数据用于演示。生产环境将接入GoPlus Security API。
+                <br><em>This module currently uses sample contract data for demonstration. Production will use GoPlus Security API.</em>
+            </p>
             <p><strong>Threats Detected</strong>: 8 | <strong>Est. Loss Prevention</strong>: $2,300,000</p>
             <div style="overflow-x: auto; margin: 15px 0;">
 <div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Contract Security Alerts (24h)</div>
@@ -481,6 +489,10 @@
         
         <div class="section">
             <h2>8. On-Chain Pattern Observations</h2>
+            <p style="background-color: #2a1f1f; border-left: 3px solid #ff6b6b; padding: 10px; margin: 10px 0; color: #ff9999; font-size: 12px;">
+                <strong>⚠️ 示例数据 (Sample Data)</strong>: 本模块当前使用示例KOL和代币数据用于演示。生产环境将接入X平台实时爬虫。
+                <br><em>This module currently uses sample KOL and token data for demonstration. Production will use real-time X platform crawler.</em>
+            </p>
             <p><strong>Note</strong>: The following documents temporal correlations between social media mentions and on-chain activity. Correlation does not imply causation. This pattern may occasionally occur due to legitimate market activity; cross-check with other indicators.</p>
         
             <div style="background-color: #0f1429; padding: 15px; margin: 15px 0; border-left: 3px solid #00d4ff;">

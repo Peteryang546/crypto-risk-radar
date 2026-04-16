@@ -1,0 +1,237 @@
+{
+  "market_summary": {
+    "btc_price": 74375,
+    "btc_change_24h": 4.69595,
+    "eth_price": 2367.01,
+    "eth_change_24h": 7.87893,
+    "total_coins_analyzed": 100,
+    "gainers": 79,
+    "losers": 21,
+    "timestamp": "2026-04-14T11:34:15.906492"
+  },
+  "high_risk_tokens": [],
+  "all_coins": [
+    {
+      "price_change_24h": 4.69595,
+      "symbol": "BTC",
+      "id": "bitcoin",
+      "total_volume": 56202548085,
+      "current_price": 74375,
+      "circulating_supply": 20015503.0,
+      "name": "Bitcoin",
+      "last_updated": "2026-04-14T03:33:32.005Z",
+      "market_cap": 1487572668784
+    },
+    {
+      "price_change_24h": 7.87893,
+      "symbol": "ETH",
+      "id": "ethereum",
+      "total_volume": 25049828495,
+      "current_price": 2367.01,
+      "circulating_supply": 120690991.7749981,
+      "name": "Ethereum",
+      "last_updated": "2026-04-14T03:33:31.822Z",
+      "market_cap": 285395359266
+    },
+    {
+      "price_change_24h": 0.02708,
+      "symbol": "USDT",
+      "id": "tether",
+      "total_volume": 85958734356,
+      "current_price": 1.0,
+      "circulating_supply": 184674430497.4122,
+      "name": "Tether",
+      "last_updated": "2026-04-14T03:33:31.862Z",
+      "market_cap": 184731427311
+    },
+    {
+      "price_change_24h": 3.43721,
+      "symbol": "BNB",
+      "id": "binancecoin",
+      "total_volume": 1357789601,
+      "current_price": 615.72,
+      "circulating_supply": 136356379.72,
+      "name": "BNB",
+      "last_updated": "2026-04-14T03:33:31.488Z",
+      "market_cap": 83932140847
+    },
+    {
+      "price_change_24h": 3.01716,
+      "symbol": "XRP",
+      "id": "ripple",
+      "total_volume": 2643781199,
+      "current_price": 1.37,
+      "circulating_supply": 61405531717.0,
+      "name": "XRP",
+      "last_updated": "2026-04-14T03:33:31.774Z",
+      "market_cap": 83890385482
+    },
+    {
+      "price_change_24h": -0.01252,
+      "symbol": "USDC",
+      "id": "usd-coin",
+      "total_volume": 16944078367,
+      "current_price": 0.999756,
+      "circulating_supply": 78794877068.24232,
+      "name": "USDC",
+      "last_updated": "2026-04-14T03:33:31.602Z",
+      "market_cap": 78778922857
+    },
+    {
+      "price_change_24h": 5.02697,
+      "symbol": "SOL",
+      "id": "solana",
+      "total_volume": 4522020979,
+      "current_price": 86.12,
+      "circulating_supply": 575141705.3367035,
+      "name": "Solana",
+      "last_updated": "2026-04-14T03:33:31.659Z",
+      "market_cap": 49501069564
+    },
+    {
+      "price_change_24h": 0.03612,
+      "symbol": "TRX",
+      "id": "tron",
+      "total_volume": 516778506,
+      "current_price": 0.320679,
+      "circulating_supply": 94773780404.265,
+      "name": "TRON",
+      "last_updated": "2026-04-14T03:33:22.843Z",
+      "market_cap": 30397351888
+    },
+    {
+      "price_change_24h": 0.71934,
+      "symbol": "FIGR_HELOC",
+      "id": "figure-heloc",
+      "total_volume": 14802046,
+      "current_price": 1.027,
+      "circulating_supply": 16644323597.827,
+      "name": "Figure Heloc",
+      "last_updated": "2026-04-14T03:33:28.656Z",
+      "market_cap": 17091614828
+    },
+    {
+      "price_change_24h": 2.6822,
+      "symbol": "DOGE",
+      "id": "dogecoin",
+      "total_volume": 1568075107,
+      "current_price": 0.093598,
+      "circulating_supply": 153819486383.7052,
+      "name": "Dogecoin",
+      "last_updated": "2026-04-14T03:33:29.354Z",
+      "market_cap": 14388056856
+    },
+    {
+      "price_change_24h": 4.75002,
+      "symbol": "WBT",
+      "id": "whitebit",
+      "total_volume": 78425294,
+      "current_price": 54.64,
+      "circulating_supply": 213418274.0,
+      "name": "WhiteBIT Coin",
+      "last_updated": "2026-04-14T03:33:24.220Z",
+      "market_cap": 11655126340
+    },
+    {
+      "price_change_24h": -0.0192,
+      "symbol": "USDS",
+      "id": "usds",
+      "total_volume": 84840940,
+      "current_price": 0.999687,
+      "circulating_supply": 11313228251.25276,
+      "name": "USDS",
+      "last_updated": "2026-04-14T03:33:26.389Z",
+      "market_cap": 11309226881
+    },
+    {
+      "price_change_24h": 6.67713,
+      "symbol": "HYPE",
+      "id": "hyperliquid",
+      "total_volume": 419471337,
+      "current_price": 44.46,
+      "circulating_supply": 238385315.9541414,
+      "name": "Hyperliquid",
+      "last_updated": "2026-04-14T03:33:28.214Z",
+      "market_cap": 10595118424
+    },
+    {
+      "price_change_24h": -0.15517,
+      "symbol": "LEO",
+      "id": "leo-token",
+      "total_volume": 448889,
+      "current_price": 10.12,
+      "circulating_supply": 920845344.9,
+      "name": "LEO Token",
+      "last_updated": "2026-04-14T03:33:29.912Z",
+      "market_cap": 9309839337
+    },
+    {
+      "price_change_24h": 3.08337,
+      "symbol": "ADA",
+      "id": "cardano",
+      "total_volume": 480681752,
+      "current_price": 0.245214,
+      "circulating_supply": 36940364839.85039,
+      "name": "Cardano",
+      "last_updated": "2026-04-14T03:33:30.309Z",
+      "market_cap": 9053725966
+    },
+    {
+      "price_change_24h": 2.26813,
+      "symbol": "BCH",
+      "id": "bitcoin-cash",
+      "total_volume": 193406398,
+      "current_price": 434.65,
+      "circulating_supply": 20020790.52165078,
+      "name": "Bitcoin Cash",
+      "last_updated": "2026-04-14T03:33:30.590Z",
+      "market_cap": 8702063247
+    },
+    {
+      "price_change_24h": 5.17268,
+      "symbol": "LINK",
+      "id": "chainlink",
+      "total_volume": 408009117,
+      "current_price": 9.22,
+      "circulating_supply": 727099970.4523476,
+      "name": "Chainlink",
+      "last_updated": "2026-04-14T03:33:30.235Z",
+      "market_cap": 6700873929
+    },
+    {
+      "price_change_24h": 1.08423,
+      "symbol": "XMR",
+      "id": "monero",
+      "total_volume": 109232625,
+      "current_price": 347.38,
+      "circulating_supply": 18446744.07370955,
+      "name": "Monero",
+      "last_updated": "2026-04-14T03:33:31.203Z",
+      "market_cap": 6410011202
+    },
+    {
+      "price_change_24h": -0.77061,
+      "symbol": "ZEC",
+      "id": "zcash",
+      "total_volume": 589590781,
+      "current_price": 358.91,
+      "circulating_supply": 16656784.5405448,
+      "name": "Zcash",
+      "last_updated": "2026-04-14T03:33:26.555Z",
+      "market_cap": 5979201761
+    },
+    {
+      "price_change_24h": 0.05542,
+      "symbol": "USDE",
+      "id": "ethena-usde",
+      "total_volume": 189639839,
+      "current_price": 1.0,
+      "circulating_supply": 5828297814.522167,
+      "name": "Ethena USDe",
+      "last_updated": "2026-04-14T03:33:25.558Z",
+      "market_cap": 5829115777
+    }
+  ],
+  "data_source": "CoinGecko API",
+  "timestamp": "2026-04-14T11:34:15.906492"
+}

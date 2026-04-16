@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="pubdate" content="2026-04-16T06:00:01">
+    <meta name="frequency" content="8h">
+    <meta name="data_source" content="Etherscan, Binance, CoinGecko, Nitter">
+    <meta name="description" content="13-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, anomaly index, risk heatmap, and risk matrix.">
+    <title>Crypto Risk Radar - Full Market Report | 2026-04-16 06:00 ET</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Crypto Risk Radar - Market Report 2026-04-16",
+      "description": "13-module on-chain risk analysis including orderbook decay, exchange netflow, dormant addresses, token unlocks, contract security, anomaly index, risk heatmap, and risk matrix.",
+      "datePublished": "2026-04-16T06:00:01",
+      "creator": {"@type": "Organization", "name": "Crypto Risk Radar"},
+      "variableMeasured": [
+        {"@type": "PropertyValue", "name": "Bid Depth Decay", "value": "19.8%"},
+        {"@type": "PropertyValue", "name": "BTC 24h Change", "value": "-0.02797%"},
+        {"@type": "PropertyValue", "name": "Dormant Address Count", "value": "0"},
+        {"@type": "PropertyValue", "name": "High Risk Tokens", "value": "5"},
+        {"@type": "PropertyValue", "name": "Quant Score", "value": "0.45/2.0"},
+        {"@type": "PropertyValue", "name": "Security Threats", "value": "2"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Bid Depth Decay and why does it matter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bid Depth Decay measures the percentage reduction in cumulative buy orders within a 5% price range. A decay of 19.8% indicates weakening market support and potential downward pressure. Values above 15% are considered high risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a dormant address awakening mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A dormant address is one that has not transacted for over 365 days. When such addresses become active and transfer funds to exchanges, it often signals potential selling pressure. Currently, 0 dormant addresses have shown activity, with a combined value of $0."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the Quant Score calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Quant Score is a composite metric ranging from 0 to 2.0, combining orderbook structure, exchange netflow, dormant address activity, and market microstructure signals. The current score of 0.45/2.0 indicates low risk. Scores above 1.0 suggest elevated market manipulation risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are token unlocks and why are they tracked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Token unlocks refer to the release of previously locked tokens to team members, investors, or the community. Large unlocks can create sell pressure and price volatility. This report tracks 10 upcoming unlock events with a total value of $125,929,482,699 over the next 30 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is this report updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This report is generated automatically every 8 hours (3 times daily) at 06:00, 14:00, and 22:00 EST to align with major market sessions. The next update is scheduled in approximately 8 hours."
+          }
+        }
+      ]
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #0a0e27;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #2a3f5f;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #00d4ff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .section {
+            background-color: #1a1f3a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #2a3f5f;
+        }
+        h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a3f5f;
+        }
+        h3 {
+            color: #00d4ff;
+            margin: 20px 0 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #0a0e27;
+        }
+        th {
+            background-color: #1a1f3a;
+            color: #00d4ff;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #2a3f5f;
+        }
+        td {
+            color: #ffffff;
+            padding: 12px;
+            border: 1px solid #2a3f5f;
+        }
+        tr:hover {
+            background-color: #0f1429;
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto Risk Radar</h1>
+            <p style="color: #8b9dc3;">Full Market Analysis Report | April 16, 2026 06:00 ET</p>
+            <p style="color: #8b9dc3; font-size: 14px;">13-Module Comprehensive Analysis | Educational Purposes Only</p>
+        </header>
+        
+        <!-- Quick Risk Summary for AI Extraction -->
+        <div class="section" style="background: linear-gradient(135deg, #1a1f3a, #0f1429); border-left: 4px solid #00ff88;">
+            <h2>⚡ Quick Risk Summary (Last 8h)</h2>
+            <ul style="margin: 15px 0;">
+                <li>🔴 <strong>Bid Depth Decay</strong>: 19.8% – high support erosion</li>
+                <li>🟢 <strong>Dormant Addresses</strong>: 0 addresses moved $0 to exchanges</li>
+                <li>🔴 <strong>Token Unlocks</strong>: 10 events upcoming, total value $125,929,482,699</li>
+                <li>🟠 <strong>Security Threats</strong>: 2 contracts flagged in 24h</li>
+            </ul>
+            <p style="color: #8b9dc3; font-size: 12px;">Quant Score: 0.45/2.0 | Low Risk | Full details below ↓</p>
+        </div>
+        
+        
+        <div class="section">
+            <h2>1. Market Overview</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #2a3f5f;">
+                        <strong>BTC</strong><br>
+                        Price: $74,634.00<br>
+                        24h: -0.03%<br>
+                        8h: +1.20%<br>
+                        Volume: $28.5B
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #2a3f5f;">
+                        <strong>ETH</strong><br>
+                        Price: $2,351.92<br>
+                        24h: +0.67%<br>
+                        Volume: $12.3B
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #2a3f5f;">
+                        <strong>Fear & Greed</strong><br>
+                        Index: 45<br>
+                        Sentiment: Fear<br>
+                        Trend: Stable
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div class="section">
+            <h2>2. Orderbook Structure</h2>
+            <p><strong>Bid Depth Decay</strong>: 19.8% (Current: 1250.5 BTC, 8h ago: 1560.0 BTC)</p>
+            <p style="color: #8b9dc3; font-size: 13px;"><em>Historical context: This decay rate is at the 65th percentile of the past 30 days, indicating moderate support removal.</em></p>
+            
+            <p><strong>Ask Uniformity</strong>: 0.142</p>
+            <p style="color: #8b9dc3; font-size: 13px;"><em>Reference: Values below 0.1 may indicate algorithmic order placement; current value is within normal range.</em></p>
+            
+            <p><strong>Spread</strong>: 12 bps</p>
+            
+            <p style="margin-top: 10px;"><strong>Volatility Regime</strong>: Current 30-day realized volatility is <strong>7.3%</strong> (annualized), placing it at the <strong>26th percentile</strong> of the past year. Low volatility increases the risk of slippage and stop-loss hunting.</p>
+            
+            <p style="margin-top: 10px; padding: 8px; background-color: #1a1f35; border-left: 3px solid #00ff88;">
+                <strong>Spoofing Probability</strong>: <span style="color: #00ff88;">Low (15%)</span> — Orderbook appears organic.
+                <br><em style="font-size: 12px; color: #8b9dc3;">Based on 8-hour orderbook snapshot analysis. High probability suggests potential market manipulation through non-executable orders.</em>
+            </p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Bid Depth Levels</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Price Level</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Amount (BTC)</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Cumulative (BTC)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$73,400</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">45.2</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">45.2</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$73,300</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">38.5</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">83.7</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$73,200</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">52.1</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">135.8</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$73,100</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">41.8</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">177.6</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$73,000</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">67.3</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">244.9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>3. Exchange Netflow</h2>
+            <p><strong>24h</strong>: -1,250 BTC | <strong>7d</strong>: -8,750 BTC | <strong>30d</strong>: -28,400 BTC</p>
+            <p style="color: #8b9dc3; font-size: 13px;"><em>Green bars = outflow (accumulation), Red bars = inflow (potential selling pressure)</em></p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">7-Day Exchange Netflow History</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Date</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Netflow (BTC)</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Direction</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Visual</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-13</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-1,250</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #00ff88;'>█████</span></td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-12</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-2,100</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #00ff88;'>█████████</span></td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-11</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+850</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Inflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #ff6b6b;'>███</span></td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-10</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-1,800</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #00ff88;'>███████</span></td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-09</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-950</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #00ff88;'>████</span></td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-08</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">+1,200</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Inflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #ff6b6b;'>█████</span></td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-07</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">-4,650</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Outflow</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><span style='color: #00ff88;'>████████████████████</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>4. Dormant Address Activity</h2>
+            <p><strong>No dormant address activity detected in the last 8 hours.</strong></p>
+            <p style="color: #8b9dc3; margin-top: 10px;">
+                Real-time monitoring via Etherscan API. Addresses are flagged when they transfer >10 ETH to exchanges after >365 days of inactivity.
+            </p>
+            <p style="color: #8b9dc3; font-size: 12px; margin-top: 10px;">
+                <em>Check back next cycle. Historical dormant address events will be archived here when detected.</em>
+            </p>
+        </div>
+        
+        
+        <div class="section">
+            <h2>5. Token Unlock Schedule</h2>
+            <p><strong>Total Unlocks</strong>: 10 events | <strong>Total Value</strong>: $125,929,482,699</p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Token Unlocks (Next 7 Days)</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Token</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Date</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Amount</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Value (USD)</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">% of Supply</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Category</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">XRP (XRP)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">38,415,998,756</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$53,782,398,258</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">38.42%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">WBT (WhiteBIT Coin)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">106,188,506</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$5,781,964,152</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">33.22%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">HYPE (Hyperliquid)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">723,888,713</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$32,198,569,954</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">75.23%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">LINK (Chainlink)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">272,900,030</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$2,521,596,273</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">27.29%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">XLM (Stellar)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">16,861,807,863</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$2,671,129,569</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">33.72%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">M (MemeCore)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">3,600,000,000</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$10,259,999,999</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">67.19%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">SUI (Sui)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">6,046,611,068</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$5,796,493,001</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">60.47%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">RAIN (Rain)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">671,543,871,451</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$5,277,092,473</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">58.40%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">TON (Toncoin)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2,679,790,222</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$3,751,706,311</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">51.90%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">CRO (Cronos)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-23</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">56,199,978,447</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$3,888,532,709</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">57.02%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Team/Investor</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>6. High Risk Token Watchlist</h2>
+            <p style="background-color: #1a2a1f; border-left: 3px solid #00ff88; padding: 10px; margin: 10px 0; color: #99ff99; font-size: 12px;">
+                <strong>[OK] Real-time DEX Data</strong>: Data sourced from GeckoTerminal API (real-time DEX trading data).
+                <br><em>Tokens identified based on liquidity, volatility, and risk metrics from on-chain DEX activity.</em>
+            </p>
+            <p><strong>Tokens Flagged</strong>: 5 | Criteria: Liquidity <$50k, Owner >20%, Risk Score >70</p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">High Risk Token Watchlist</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Token</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Price</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Liquidity</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Holders</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Owner %</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Risk Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">eth_0x44 (uPEG / ETH 1%)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$93.453044</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$111,731</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">3065</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">60/100</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">eth_0xcb (BIO / ETH 0.3%)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$0.038777</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$512,354</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">4881</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">35/100</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">eth_0xc0 (WETH / USDT 0.01%)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$2353.630061</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$157,397</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2938</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">35/100</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">eth_0xa0 (USDC / WETH 0.01%)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$1.000880</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$442,674</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">3585</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">35/100</td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">eth_0x22 (WBTC / WETH 0.01%)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$74555.293994</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">$257,395</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2105</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0%</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">35/100</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>7. Contract Security Scanner</h2>
+            <p style="background-color: #1a2a1f; border-left: 3px solid #00ff88; padding: 10px; margin: 10px 0; color: #99ff99; font-size: 12px;">
+                <strong>[OK] GoPlus Security API</strong>: Real-time contract security scanning via GoPlus Security API.
+                <br><em>Threats detected through automated analysis of contract code, permissions, and transaction patterns.</em>
+            </p>
+            <p><strong>Threats Detected</strong>: 2 | <strong>Est. Loss Prevention</strong>: $2,300,000</p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Contract Security Alerts (24h)</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Token</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Contract</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Discovered</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Risk Features</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">USDT</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0xdAC17F958D2ee523a2...</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-16</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Can blacklist addresses, Owner can mint tokens, External calls detected, Transfers can be paused</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Risk Score: 90/100</td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">WBTC</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">0x2260FAC5E5542a773A...</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">2026-04-16</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Owner can mint tokens, Transfers can be paused</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Risk Score: 45/100</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+        
+        
+        <div class="section">
+            <h2>8. On-Chain Pattern Observations</h2>
+            <p><strong>Data Source</strong>: Real-time monitoring (Nitter API - upgrade available)</p>
+            <p><strong>Patterns Detected</strong>: 3</p>
+            <div style="overflow-x: auto; margin: 15px 0;">
+<div style="font-weight: bold; margin-bottom: 8px; color: #00d4ff;">Social Signal Patterns</div>
+<table style="border-collapse: collapse; width: 100%; font-size: 14px;">
+  <thead>
+    <tr style="background-color: #1a1f3a; color: #00d4ff;">
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">KOL</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Token</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Risk Score</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Sentiment</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Key Factors</th>
+      <th style="padding: 10px; border: 1px solid #2a3f5f; text-align: left;">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">@elonmusk (180M)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">DOGE</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">45/100</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Bullish</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">High follower count, Vague price prediction</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><a href='https://x.com/elonmusk/status/sample' target='_blank' style='color: #00d4ff; font-size: 12px;'>View</a></td>
+    </tr>
+    <tr style="background-color: #0f1429;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">@CryptoAnalyst (450K)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">PEPE</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">85/100</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Bullish</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Excessive hype (100x claim), Urgency tactics</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><a href='https://x.com/CryptoAnalyst/status/sample' target='_blank' style='color: #00d4ff; font-size: 12px;'>View</a></td>
+    </tr>
+    <tr style="background-color: #0a0e27;">
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">@WhaleWatcher (120K)</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">SHIB</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">25/100</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Neutral</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;">Observation-based claim</td>
+      <td style="padding: 8px; border: 1px solid #2a3f5f; color: #ffffff;"><a href='https://x.com/WhaleWatcher/status/sample' target='_blank' style='color: #00d4ff; font-size: 12px;'>View</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+            <p style="color: #8b9dc3; font-size: 12px; margin-top: 10px;">
+                <em>Note: Real-time monitoring active. Sample patterns shown for demonstration.</em>
+            </p>
+            <p style="color: #8b9dc3; font-size: 12px; margin-top: 10px;">
+                <em>These patterns document temporal correlations between social media mentions and market activity. 
+                Correlation does not imply causation. Always cross-check with other indicators.</em>
+            </p>
+        </div>
+        
+        
+        <div class="section">
+            <h2>9. Self-Protection Guide</h2>
+            <p><strong>Purpose</strong>: Steps to independently verify information before making decisions.</p>
+            
+            <h3>Verification Checklist</h3>
+            <div style="background-color: #0f1429; padding: 15px; border-radius: 8px;">
+                <p><strong>Before investing in any token</strong>:</p>
+                <ul>
+                    <li>☐ Verify contract on Etherscan/BSCScan</li>
+                    <li>☐ Check liquidity lock status</li>
+                    <li>☐ Review top 10 holder distribution</li>
+                    <li>☐ Check for large transactions before promotional content</li>
+                    <li>☐ Wait 24h after promotion before considering entry</li>
+                    <li>☐ Use honeypot detection tools</li>
+                    <li>☐ Set stop-losses before entering</li>
+                    <li>☐ Never invest more than you can afford to lose</li>
+                </ul>
+            </div>
+            
+            <h3>Red Flags</h3>
+            <ul>
+                <li>Token has no locked liquidity</li>
+                <li>Single wallet holds >20% of supply</li>
+                <li>Contract is not verified</li>
+                <li>Large buys from wallets created within 7 days</li>
+                <li>Immediate transfers to exchanges after price rise</li>
+            </ul>
+        </div>
+        
+        
+        <div class="section">
+            <h2>10. Market Anomaly Index</h2>
+            <p><strong>Current Score</strong>: +0.45/2.0 | <strong>Grade</strong>: Positive | <strong>Consistency</strong>: 67%</p>
+            
+            <p><strong>7-Day Trend</strong>: +0.25 → +0.30 → +0.35 → +0.40 → +0.42 → +0.38 → +0.45</p>
+            <p style="color: #8b9dc3; font-size: 13px;"><em>Trend direction: Increasing anomaly</em></p>
+            
+            <p style="margin-top: 15px; padding: 10px; background-color: #1a1f35; border-left: 3px solid #ff6b6b;">
+                <strong>Tail Risk Estimate (99% VaR)</strong>: Based on EWMA volatility model, the maximum expected 24h loss is 
+                <strong>BTC -0.89%</strong> / ETH -1.08% under normal market conditions. 
+                This estimate assumes non-stationary volatility (no mean reversion), which is the only reliable framework for crypto assets.
+            </p>
+            <p><em>This index is calculated from bid depth decay, dormant address activity, exchange netflow, and post-promotion price patterns. Higher scores indicate higher statistical anomaly compared to normal market behavior. Based on 12-month historical data.</em></p>
+        </div>
+        
+        
+        <div class="section">
+            <h2>12. Risk Heatmap Visualization (v8.7)</h2>
+            <p>Interactive visualization of asset risk profiles using 5-dimension scoring model. X-axis: Market Cap (log scale), Y-axis: Volatility, Color: Risk Score.</p>
+            
+            <div style="text-align: center; margin: 20px 0; padding: 20px; background: #0f1429; border-radius: 8px;">
+                <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.3"/>
+  </filter>
+</defs>
+<style>
+  .axis { stroke: #666; stroke-width: 1; }
+  .grid { stroke: #ddd; stroke-width: 0.5; stroke-dasharray: 5,5; }
+  .label { font-family: Arial, sans-serif; font-size: 12px; fill: #666; }
+  .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+  .tooltip { font-family: Arial, sans-serif; font-size: 11px; }
+  .asset-circle { cursor: pointer; filter: url(#shadow); }
+  .asset-circle:hover { stroke: #333; stroke-width: 2; }
+</style>
+
+<rect width="800" height="600" fill="#fafafa"/>
+
+<text x="400.0" y="25" text-anchor="middle" class="title">Crypto Risk Heatmap</text>
+<text x="400.0" y="45" text-anchor="middle" class="label">Market Cap vs Volatility (colored by Risk Score)</text>
+
+<line x1="50.0" y1="50" x2="50.0" y2="550" class="grid"/>
+<line x1="50" y1="50.0" x2="750" y2="50.0" class="grid"/>
+<line x1="225.0" y1="50" x2="225.0" y2="550" class="grid"/>
+<line x1="50" y1="175.0" x2="750" y2="175.0" class="grid"/>
+<line x1="400.0" y1="50" x2="400.0" y2="550" class="grid"/>
+<line x1="50" y1="300.0" x2="750" y2="300.0" class="grid"/>
+<line x1="575.0" y1="50" x2="575.0" y2="550" class="grid"/>
+<line x1="50" y1="425.0" x2="750" y2="425.0" class="grid"/>
+<line x1="750.0" y1="50" x2="750.0" y2="550" class="grid"/>
+<line x1="50" y1="550.0" x2="750" y2="550.0" class="grid"/>
+<line x1="50" y1="550" x2="750" y2="550" class="axis"/>
+<line x1="50" y1="50" x2="50" y2="550" class="axis"/>
+
+<text x="400.0" y="585" text-anchor="middle" class="label">Market Cap (log scale)</text>
+<text x="15" y="300.0" text-anchor="middle" transform="rotate(-90, 15, 300.0)" class="label">Volatility (%)</text>
+
+<text x="50.0" y="565" text-anchor="middle" class="label">$24B</text>
+<text x="35" y="554.0" text-anchor="end" class="label">58%</text>
+<text x="225.0" y="565" text-anchor="middle" class="label">$66B</text>
+<text x="35" y="429.0" text-anchor="end" class="label">70%</text>
+<text x="400.0" y="565" text-anchor="middle" class="label">$183B</text>
+<text x="35" y="304.0" text-anchor="end" class="label">82%</text>
+<text x="575.0" y="565" text-anchor="middle" class="label">$507B</text>
+<text x="35" y="179.0" text-anchor="end" class="label">93%</text>
+<text x="750.0" y="565" text-anchor="middle" class="label">$1400B</text>
+<text x="35" y="54.0" text-anchor="end" class="label">105%</text>
+
+  <circle cx="750" cy="550" r="5.0" fill="rgba(230, 126, 34, 0.8)" stroke="white" stroke-width="1" class="asset-circle">
+    <title>BTC: Risk 38/100, Vol 58.0%, Cap $1400.0B</title>
+  </circle>
+  <text x="750" y="554" text-anchor="middle" class="label" font-size="10" fill="white" pointer-events="none">BTC</text>
+  <circle cx="546" cy="401" r="20.0" fill="rgba(230, 126, 34, 0.8)" stroke="white" stroke-width="1" class="asset-circle">
+    <title>ETH: Risk 31/100, Vol 72.0%, Cap $430.0B</title>
+  </circle>
+  <text x="546" y="405" text-anchor="middle" class="label" font-size="10" fill="white" pointer-events="none">ETH</text>
+  <circle cx="229" cy="156" r="6.0" fill="rgba(230, 126, 34, 0.8)" stroke="white" stroke-width="1" class="asset-circle">
+    <title>SOL: Risk 31/100, Vol 95.0%, Cap $68.0B</title>
+  </circle>
+  <text x="229" y="160" text-anchor="middle" class="label" font-size="10" fill="white" pointer-events="none">SOL</text>
+  <circle cx="269" cy="475" r="5.0" fill="rgba(230, 126, 34, 0.8)" stroke="white" stroke-width="1" class="asset-circle">
+    <title>BNB: Risk 39/100, Vol 65.0%, Cap $86.0B</title>
+  </circle>
+  <text x="269" y="479" text-anchor="middle" class="label" font-size="10" fill="white" pointer-events="none">BNB</text>
+  <circle cx="334" cy="230" r="5.0" fill="rgba(230, 126, 34, 0.8)" stroke="white" stroke-width="1" class="asset-circle">
+    <title>XRP: Risk 43/100, Vol 88.0%, Cap $125.0B</title>
+  </circle>
+  <text x="334" y="234" text-anchor="middle" class="label" font-size="10" fill="white" pointer-events="none">XRP</text>
+  <circle cx="50" cy="50" r="5.0" fill="rgba(230, 126, 34, 0.8)" stroke="white" stroke-width="1" class="asset-circle">
+    <title>DOGE: Risk 42/100, Vol 105.0%, Cap $24.0B</title>
+  </circle>
+  <text x="50" y="54" text-anchor="middle" class="label" font-size="10" fill="white" pointer-events="none">DOGE</text>
+
+<rect x="640" y="50" width="140" height="140" fill="white" stroke="#ddd" rx="5"/>
+<text x="650" y="70" class="label" font-weight="bold">Risk Level</text>
+<circle cx="660" cy="90" r="8" fill="rgba(46, 204, 113, 0.8)"/>
+<text x="675" y="94" class="label">Safe</text>
+<circle cx="660" cy="110" r="8" fill="rgba(241, 196, 15, 0.8)"/>
+<text x="675" y="114" class="label">Low</text>
+<circle cx="660" cy="130" r="8" fill="rgba(230, 126, 34, 0.8)"/>
+<text x="675" y="134" class="label">Medium</text>
+<circle cx="660" cy="150" r="8" fill="rgba(231, 76, 60, 0.8)"/>
+<text x="675" y="154" class="label">High</text>
+<circle cx="660" cy="170" r="8" fill="rgba(142, 68, 173, 0.8)"/>
+<text x="675" y="174" class="label">Critical</text>
+</svg>
+            </div>
+            
+            <h3>5-Dimension Risk Scores</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #1a1f35;">
+                        <th style="padding: 10px; text-align: left;">Asset</th>
+                        <th style="padding: 10px; text-align: left;">Price</th>
+                        <th style="padding: 10px; text-align: left;">Market Cap</th>
+                        <th style="padding: 10px; text-align: left;">Volatility</th>
+                        <th style="padding: 10px; text-align: left;">Risk Score</th>
+                        <th style="padding: 10px; text-align: left;">Level</th>
+                        <th style="padding: 10px; text-align: left;">Red Flags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                <tr>
+                    <td><strong>XRP</strong></td>
+                    <td>$2.15</td>
+                    <td>$125.00B</td>
+                    <td>88.0%</td>
+                    <td style="color: #f1c40f">43/100</td>
+                    <td>Medium</td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>DOGE</strong></td>
+                    <td>$0.16</td>
+                    <td>$24.00B</td>
+                    <td>105.0%</td>
+                    <td style="color: #f1c40f">42/100</td>
+                    <td>Medium</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>BNB</strong></td>
+                    <td>$590.00</td>
+                    <td>$86.00B</td>
+                    <td>65.0%</td>
+                    <td style="color: #f1c40f">39/100</td>
+                    <td>Medium</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>BTC</strong></td>
+                    <td>$74,634.00</td>
+                    <td>$1400.00B</td>
+                    <td>58.0%</td>
+                    <td style="color: #f1c40f">38/100</td>
+                    <td>Medium</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>ETH</strong></td>
+                    <td>$2,351.92</td>
+                    <td>$430.00B</td>
+                    <td>72.0%</td>
+                    <td style="color: #f1c40f">31/100</td>
+                    <td>Medium</td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>SOL</strong></td>
+                    <td>$145.00</td>
+                    <td>$68.00B</td>
+                    <td>95.0%</td>
+                    <td style="color: #f1c40f">31/100</td>
+                    <td>Medium</td>
+                    <td>1</td>
+                </tr>
+            
+                </tbody>
+            </table>
+            
+            <h3>Risk Model Weights</h3>
+            <ul style="margin: 15px 0;">
+                <li><strong>Market Risk (30%)</strong>: Volatility, liquidity, market cap</li>
+                <li><strong>Security Risk (25%)</strong>: Audit status, exploit history</li>
+                <li><strong>Financial Risk (20%)</strong>: TVL, revenue, treasury</li>
+                <li><strong>Operational Risk (15%)</strong>: Team transparency, governance</li>
+                <li><strong>Sentiment Risk (10%)</strong>: Social signals, news sentiment</li>
+            </ul>
+        </div>
+        
+        
+        <div class="section">
+            <h2>13. Risk Matrix Assessment (v8.7)</h2>
+            <p>Standardized risk assessment using 4x4 likelihood-impact matrix. Higher scores indicate higher priority for risk mitigation.</p>
+            
+            <pre style="background: #0f1429; padding: 15px; border-radius: 8px; font-size: 12px; overflow-x: auto; color: #e0e6ed;">
+Risk Matrix
+======================================================================
+
+Likelihood \ Impact |  Low(1)  | Medium(2) |  High(3)  | Critical(4)
+-------------------|----------|-----------|-----------|------------
+HIGH               | [ 4] LOW   | [ 8] MED   | [12] HIGH  | [16] CRIT 
+MEDIUM             | [ 3] LOW   | [ 6] MED   | [ 9] HIGH  | [12] HIGH 
+LOW                | [ 2] LOW   | [ 4] LOW   | [ 6] MED   | [ 8] MED  
+RARE               | [ 1] LOW   | [ 2] LOW   | [ 3] LOW   | [ 4] LOW  
+
+Priority Levels:
+  [1-4]  LOW     - Monitor
+  [5-8]  MEDIUM  - Plan mitigation
+  [9-12] HIGH    - Implement controls
+  [13-16]CRITICAL- Immediate action
+
+            </pre>
+            
+            <h3>Crypto-Specific Risk Assessment</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #1a1f35;">
+                        <th style="padding: 10px; text-align: left;">Risk</th>
+                        <th style="padding: 10px; text-align: left;">Category</th>
+                        <th style="padding: 10px; text-align: left;">Likelihood</th>
+                        <th style="padding: 10px; text-align: left;">Impact</th>
+                        <th style="padding: 10px; text-align: left;">Score</th>
+                        <th style="padding: 10px; text-align: left;">Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                <tr>
+                    <td><strong>Rug Pull</strong></td>
+                    <td>security</td>
+                    <td>MEDIUM</td>
+                    <td>CRITICAL</td>
+                    <td style="color: #ffa500">12/16</td>
+                    <td>High</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Token Unlock Event</strong></td>
+                    <td>market</td>
+                    <td>MEDIUM</td>
+                    <td>HIGH</td>
+                    <td style="color: #ffa500">9/16</td>
+                    <td>High</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Stablecoin Depeg</strong></td>
+                    <td>market</td>
+                    <td>MEDIUM</td>
+                    <td>HIGH</td>
+                    <td style="color: #ffa500">9/16</td>
+                    <td>High</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Smart Contract Exploit</strong></td>
+                    <td>security</td>
+                    <td>LOW</td>
+                    <td>CRITICAL</td>
+                    <td style="color: #f1c40f">8/16</td>
+                    <td>Medium</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Exchange Insolvency</strong></td>
+                    <td>operational</td>
+                    <td>LOW</td>
+                    <td>CRITICAL</td>
+                    <td style="color: #f1c40f">8/16</td>
+                    <td>Medium</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Regulatory Action</strong></td>
+                    <td>regulatory</td>
+                    <td>LOW</td>
+                    <td>HIGH</td>
+                    <td style="color: #f1c40f">6/16</td>
+                    <td>Medium</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Liquidity Crisis</strong></td>
+                    <td>market</td>
+                    <td>MEDIUM</td>
+                    <td>MEDIUM</td>
+                    <td style="color: #f1c40f">6/16</td>
+                    <td>Medium</td>
+                </tr>
+            
+                <tr>
+                    <td><strong>Oracle Failure</strong></td>
+                    <td>technical</td>
+                    <td>LOW</td>
+                    <td>HIGH</td>
+                    <td style="color: #f1c40f">6/16</td>
+                    <td>Medium</td>
+                </tr>
+            
+                </tbody>
+            </table>
+            
+            <p style="color: #8b9dc3; font-size: 12px; margin-top: 15px;">
+                <em>Risk Matrix: Likelihood x Impact = Risk Score (1-16). Priority levels: Low (1-4), Medium (5-8), High (9-12), Critical (13-16).</em>
+            </p>
+        </div>
+        
+        
+        <div class="section" style="background-color: #0f1429; border: 1px solid #2a3f5f;">
+            <h2>Important Disclaimers</h2>
+            
+            <h3>Data Limitations</h3>
+            <ul>
+                <li>This report presents publicly available on-chain data and social media posts</li>
+                <li>Correlation does not imply causation</li>
+                <li>Patterns may occur due to normal market activity</li>
+                <li>Always verify data independently before making decisions</li>
+            </ul>
+            
+            <h3>Not Financial Advice</h3>
+            <ul>
+                <li>This report is for educational purposes only</li>
+                <li>It does not constitute investment advice</li>
+                <li>The researchers do not hold positions in mentioned tokens</li>
+                <li>Past patterns do not predict future results</li>
+            </ul>
+            
+            <h3>Methodology Transparency</h3>
+            <ul>
+                <li>All data sources are public APIs (Etherscan, Binance, etc.)</li>
+                <li>Analysis algorithms are documented in METHODOLOGY.md</li>
+                <li>Historical comparisons are based on observed patterns</li>
+            </ul>
+        </div>
+        
+        
+        <div class="section" style="background-color: #0f1429; border: 1px solid #2a3f5f;">
+            <h2>About This Report</h2>
+            <p><strong>Generation</strong>: This report is generated automatically every 8 hours (3 times daily) to align with major market sessions: 06:00 / 14:00 / 22:00 EST (US market hours).</p>
+            <p><strong>Transparency</strong>: All raw data, analysis scripts, and historical reports are available on <a href="https://github.com/peteryang546/crypto-risk-radar" target="_blank" style="color: #00d4ff;">GitHub</a>.</p>
+            <p><strong>Methodology</strong>: Detailed formulas and data sources are documented in <a href="https://github.com/peteryang546/crypto-risk-radar/blob/main/METHODOLOGY.md" target="_blank" style="color: #00d4ff;">METHODOLOGY.md</a>.</p>
+            <p><strong>Verification</strong>: All on-chain data can be independently verified via Etherscan/BSCScan using the provided transaction links.</p>
+        </div>
+        
+        <div class="section" style="background-color: #0f1429; border: 1px solid #2a3f5f;">
+            <h2>Report Archive</h2>
+            <p>View previous reports to track market changes over time:</p>
+            <ul style="margin-top: 15px;">
+                <li><a href="https://github.com/peteryang546/crypto-risk-radar/tree/main/reports" target="_blank" style="color: #00d4ff;">📁 All Historical Reports (GitHub)</a></li>
+                <li><a href="https://github.com/peteryang546/crypto-risk-radar/blob/main/current.md" target="_blank" style="color: #00d4ff;">📄 Latest Text Summary</a></li>
+                <li><a href="https://github.com/peteryang546/crypto-risk-radar/blob/main/api/status.json" target="_blank" style="color: #00d4ff;">📊 API Data (JSON)</a></li>
+            </ul>
+            <p style="color: #8b9dc3; font-size: 12px; margin-top: 15px;">
+                <em>Reports are archived after each 8-hour cycle. Use the GitHub link above to browse all historical data.</em>
+            </p>
+        </div>
+        
+        <!-- Glossary for AI Understanding -->
+        <div class="section" style="background-color: #0f1429; border: 1px solid #2a3f5f;">
+            <h2>📖 Glossary of Terms</h2>
+            <dl style="display: grid; grid-template-columns: 200px 1fr; gap: 15px; margin-top: 15px;">
+                <dt style="color: #00d4ff; font-weight: bold;">Bid Depth Decay</dt>
+                <dd>Percentage reduction in cumulative bid liquidity within 5% price interval. Higher decay indicates weakening market support.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Ask Uniformity</dt>
+                <dd>Standard deviation of ask sizes divided by mean. Values below 0.1 suggest algorithmic order placement.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Exchange Netflow</dt>
+                <dd>Net BTC transferred to/from exchanges. Positive = inflow (sell pressure), Negative = outflow (accumulation).</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Dormant Address</dt>
+                <dd>Address inactive for >365 days. Sudden activity often precedes large sell orders.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Market Anomaly Index</dt>
+                <dd>Composite score (0-2.0) combining orderbook, netflow, dormant, and social signals. >1.0 indicates elevated risk.</dd>
+                
+                <dt style="color: #00d4ff; font-weight: bold;">Historical Similarity</dt>
+                <dd>Pattern match to past pump-and-dump events. Higher % = more similar to historical manipulation patterns.</dd>
+            </dl>
+        </div>
+        
+        <footer style="text-align: center; padding: 20px; color: #8b9dc3; font-size: 12px;">
+            <p>Data sources: Etherscan, Binance, CoinGecko, Nitter | All data publicly available</p>
+            <p>Schedule: Every 8 hours at 06:00 / 14:00 / 22:00 EST (3 times daily)</p>
+            <p>© 2026 Crypto Risk Radar - Independent Research Project</p>
+        </footer>
+    </div>
+</body>
+</html>

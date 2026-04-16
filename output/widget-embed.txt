@@ -1,0 +1,29 @@
+<!-- Crypto Risk Radar Widget -->
+<iframe 
+    src="https://peteryang546.github.io/crypto-risk-radar/widget.html" 
+    width="400" 
+    height="320" 
+    frameborder="0" 
+    style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+</iframe>
+
+<!-- Or use JavaScript for more control -->
+<div id="crr-widget-container"></div>
+<script>
+    (function() {
+        var container = document.getElementById('crr-widget-container');
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://peteryang546.github.io/crypto-risk-radar/widget.html?token=BTC';
+        iframe.width = '400';
+        iframe.height = '320';
+        iframe.frameBorder = '0';
+        iframe.style.borderRadius = '12px';
+        iframe.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
+        container.appendChild(iframe);
+    })();
+</script>
+
+<!-- Powered by Crypto Risk Radar -->
+<p style="font-size: 11px; color: #666; margin-top: 5px;">
+    Risk data by <a href="https://peteryang546.github.io/crypto-risk-radar/" target="_blank">Crypto Risk Radar</a>
+</p>

@@ -1,0 +1,46 @@
+﻿{
+    "eth_price":  {
+                      "price":  2345.77,
+                      "change_24h":  1.00680193173744
+                  },
+    "fear_greed":  {
+                       "value":  23,
+                       "label":  "Extreme Fear"
+                   },
+    "btc_price":  {
+                      "price":  74820,
+                      "change_24h":  1.1091590735823322
+                  },
+    "dex_trending":  [
+                         {
+                             "price":  "0.000008534",
+                             "volume24h":  370.05,
+                             "symbol":  "WETH",
+                             "liquidity":  111894.91
+                         },
+                         {
+                             "price":  "0.000008560",
+                             "volume24h":  8311.57,
+                             "symbol":  "WETH",
+                             "liquidity":  49489.12
+                         },
+                         {
+                             "price":  "0.000008536",
+                             "volume24h":  6883.43,
+                             "symbol":  "WETH",
+                             "liquidity":  23278.96
+                         },
+                         {
+                             "price":  "0.000008579",
+                             "volume24h":  2820.57,
+                             "symbol":  "WETH",
+                             "liquidity":  18560.31
+                         },
+                         {
+                             "price":  "2345.25",
+                             "volume24h":  26941261.98,
+                             "symbol":  "WETH",
+                             "liquidity":  3825336.16
+                         }
+                     ]
+}

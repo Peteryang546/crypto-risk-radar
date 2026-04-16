@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-04-14T02:53:24.379696+00:00",
+  "report_type": "Crypto Risk Radar - 10 Module Analysis",
+  "schedule": "Every 8 hours at 06:00 / 14:00 / 22:00 EST",
+  "btc": {
+    "price": 73456.78,
+    "change_24h": 2.34,
+    "change_8h": 1.2,
+    "volume_24h": 28500000000
+  },
+  "eth": {
+    "price": 3521.45,
+    "change_24h": 1.87,
+    "volume_24h": 12300000000
+  },
+  "market_sentiment": {
+    "fear_greed_index": 45,
+    "sentiment": "Fear",
+    "trend": "Stable"
+  },
+  "risk_indicators": {
+    "bid_depth_decay": 19.8,
+    "ask_uniformity": 0.142,
+    "spread_bps": 12,
+    "exchange_netflow_24h": -1250,
+    "dormant_addresses_active": 2,
+    "token_unlocks_30d": 3,
+    "security_threats_24h": 8,
+    "quant_score": 0.45,
+    "risk_level": "Low"
+  },
+  "urls": {
+    "website": "https://peteryang546.github.io/crypto-risk-radar/",
+    "github": "https://github.com/peteryang546/crypto-risk-radar",
+    "methodology": "https://github.com/peteryang546/crypto-risk-radar/blob/main/METHODOLOGY.md"
+  }
+}

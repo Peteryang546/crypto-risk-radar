@@ -1,0 +1,41 @@
+{
+  "updated_at": "2026-04-16T16:21:06.322873",
+  "total_cases": 2,
+  "cases": [
+    {
+      "case_id": "FAKEAI_595F8DEE",
+      "token_symbol": "FAKEAI",
+      "chain": "ETH",
+      "discovery_date": "2026-04-16",
+      "risk_level": "[CRIT] Extreme Risk",
+      "classification": "Ignore Directly",
+      "key_signals": [
+        "honeypot detected",
+        "15% sell tax",
+        "liquidity not locked",
+        "anonymous team",
+        "contradictory narrative"
+      ],
+      "summary": "Typical high-risk scam token with honeypot in contract, top 10 holders own 78.5%, liquidity only $45k and unlocked.",
+      "claimed": "AI-powered next-gen blockchain, listing on Binance soon, early investors get 100x returns",
+      "reality": "Honeypot detected - investors cannot sell; team wallets bought heavily before shilling; liquidity can be withdrawn anytime",
+      "similar_cases": []
+    },
+    {
+      "case_id": "TEST_90ABCDEF",
+      "token_symbol": "TEST",
+      "chain": "ETH",
+      "discovery_date": "2026-04-16",
+      "risk_level": "[CRIT] Extreme Risk",
+      "classification": "Ignore Directly",
+      "key_signals": [
+        "honeypot",
+        "high tax"
+      ],
+      "summary": "Test case",
+      "claimed": "Test claim",
+      "reality": "Test reality",
+      "similar_cases": []
+    }
+  ]
+}

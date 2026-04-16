@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-04-16T18:01:30.009234",
+  "status": "critical",
+  "checks": [
+    {
+      "name": "CoinGecko",
+      "status": "error",
+      "message": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/ping",
+      "latency_ms": 0,
+      "data_count": 0
+    },
+    {
+      "name": "GoPlus Security",
+      "status": "ok",
+      "message": "API responding",
+      "latency_ms": 4278.7,
+      "data_count": 1
+    },
+    {
+      "name": "GitHub Pages",
+      "status": "error",
+      "message": "HTTPSConnectionPool(host='peteryang546.github.io', port=443): Max retries exceeded with url: /crypto",
+      "latency_ms": 0,
+      "data_count": 0
+    },
+    {
+      "name": "JSON API",
+      "status": "error",
+      "message": "HTTPSConnectionPool(host='peteryang546.github.io', port=443): Max retries exceeded with url: /crypto",
+      "latency_ms": 0,
+      "data_count": 0
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "healthy": 1,
+    "errors": 3,
+    "avg_latency_ms": 1069.675
+  }
+}

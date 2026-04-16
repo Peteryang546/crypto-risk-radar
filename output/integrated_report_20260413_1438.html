@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <title>Crypto Risk Radar - Integrated Report v6.2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #0a0e27;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #2a3f5f;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #00d4ff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .meta {
+            color: #8b9dc3;
+            font-size: 14px;
+        }
+        .section {
+            background-color: #1a1f3a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #2a3f5f;
+        }
+        h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a3f5f;
+        }
+        h3 {
+            color: #00d4ff;
+            margin: 20px 0 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #0a0e27;
+        }
+        th {
+            background-color: #1a1f3a;
+            color: #00d4ff;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #2a3f5f;
+        }
+        td {
+            color: #ffffff;
+            padding: 12px;
+            border: 1px solid #2a3f5f;
+        }
+        tr:hover {
+            background-color: #0f1429;
+        }
+        code {
+            background-color: #0a0e27;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #00d4ff;
+        }
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            margin: 10px 0 10px 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+        .risk-item, .unlock-item, .contract-item {
+            background-color: #0f1429;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 3px solid #00d4ff;
+        }
+        .status-success {
+            color: #00d4ff;
+        }
+        .status-error {
+            color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto Risk Radar</h1>
+            <p class="meta">Integrated Report v6.2 | Generated: 2026-04-13 14:38 UTC</p>
+        </header>
+        
+        <!-- TL;DR 摘要 -->
+        <div class="section" style="background: linear-gradient(135deg, #1a1f3a 0%, #0f1429 100%); border-left: 4px solid #00d4ff;">
+            <h2 style="margin-top: 0;">📋 TL;DR - 今日要点</h2>
+            <p>发现 <strong>4 个高风险代币</strong>；<strong>5 个代币</strong>未来7天有大额解锁；<strong>2 个合约</strong>存在严重安全风险。建议仔细阅读详细分析，做好风险管理。</p>
+            <p style="color: #8b9dc3; font-size: 12px; margin-top: 10px;">
+                <strong>免责声明</strong>: 本报告仅供信息参考，不构成投资建议。加密货币投资有风险，请做好自己的研究（DYOR）。
+            </p>
+        </div>
+<div class="section"><div class="market-overview">
+<h3>📊 Market Overview</h3>
+<div class="overview-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+<div class="overview-card" style="background: #0f1429; padding: 15px; border-radius: 8px; border: 1px solid #2a3f5f;">
+<h4 style="color: #8b9dc3; margin-bottom: 8px;">Bitcoin</h4>
+<p style="font-size: 24px; font-weight: bold; margin: 5px 0;">$67,500</p>
+<p style="color: #00d4ff; font-size: 14px;">▲ 2.5% (24h)</p>
+</div>
+<div class="overview-card" style="background: #0f1429; padding: 15px; border-radius: 8px; border: 1px solid #2a3f5f;">
+<h4 style="color: #8b9dc3; margin-bottom: 8px;">Ethereum</h4>
+<p style="font-size: 24px; font-weight: bold; margin: 5px 0;">$3,450</p>
+<p style="color: #ff6b6b; font-size: 14px;">▼ 1.2% (24h)</p>
+</div>
+<div class="overview-card" style="background: #0f1429; padding: 15px; border-radius: 8px; border: 1px solid #2a3f5f;">
+<h4 style="color: #8b9dc3; margin-bottom: 8px;">Total Market Cap</h4>
+<p style="font-size: 24px; font-weight: bold; margin: 5px 0;">$2.45T</p>
+<p style="color: #00d4ff; font-size: 14px;">▲ 1.8% (24h)</p>
+</div>
+<div class="overview-card" style="background: #0f1429; padding: 15px; border-radius: 8px; border: 1px solid #2a3f5f;">
+<h4 style="color: #8b9dc3; margin-bottom: 8px;">BTC Dominance</h4>
+<p style="font-size: 24px; font-weight: bold; margin: 5px 0;">52.3%</p>
+<p style="color: #8b9dc3; font-size: 14px;">Market Share</p>
+</div>
+</div>
+</div><div class="fear-greed-gauge">
+<h3>Fear & Greed Index 😐</h3>
+<div class="gauge-container" style="background: linear-gradient(to right, #ff0000 0%, #ff6b6b 20%, #ffd93d 40%, #6bcf7f 80%, #00ff00 100%); height: 30px; border-radius: 15px; position: relative; margin: 20px 0;">
+<div class="gauge-marker" style="position: absolute; left: 45%; transform: translateX(-50%); top: -10px; width: 4px; height: 50px; background: #ffffff; border-radius: 2px; box-shadow: 0 0 10px rgba(255,255,255,0.5);"></div>
+</div>
+<div class="gauge-labels" style="display: flex; justify-content: space-between; font-size: 12px; color: #8b9dc3;">
+<span>Extreme Fear</span>
+<span>Fear</span>
+<span>Neutral</span>
+<span>Greed</span>
+<span>Extreme Greed</span>
+</div>
+<div class="gauge-value" style="text-align: center; margin-top: 15px;">
+<span style="font-size: 48px; font-weight: bold; color: #ffd93d;">45</span>
+<p style="font-size: 18px; color: #ffd93d; margin-top: 5px;">Neutral</p>
+</div>
+</div></div><div class="section"><div class="chart-container">
+<h3>Exchange Netflow (7d)</h3>
+<table class="chart-table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Netflow (BTC)</th>
+<th>Trend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>04/06</td>
+<td style="color:#ff6b6b">+1,200</td>
+<td>📈 Inflow</td>
+</tr>
+<tr>
+<td>04/07</td>
+<td style="color:#00d4ff">-800</td>
+<td>📉 Outflow</td>
+</tr>
+<tr>
+<td>04/08</td>
+<td style="color:#ff6b6b">+3,500</td>
+<td>📈 Inflow</td>
+</tr>
+<tr>
+<td>04/09</td>
+<td style="color:#ff6b6b">+2,800</td>
+<td>📈 Inflow</td>
+</tr>
+<tr>
+<td>04/10</td>
+<td style="color:#00d4ff">-1,200</td>
+<td>📉 Outflow</td>
+</tr>
+<tr>
+<td>04/11</td>
+<td style="color:#ff6b6b">+5,200</td>
+<td>📈 Inflow</td>
+</tr>
+<tr>
+<td>04/12</td>
+<td style="color:#ff6b6b">+6,800</td>
+<td>📈 Inflow</td>
+</tr>
+</tbody>
+</table>
+<p><em>Exchange netflow data: Positive = Inflow (selling pressure), Negative = Outflow (accumulation)</em></p>
+</div></div><div class="section">
+<h2>🚨 High-Risk Token Watchlist (24h)</h2>
+<p><strong>⚠️ Warning</strong>: The following tokens show characteristics associated with potential honeypots or rug pulls. 
+<strong>Do your own research</strong> before interacting with any of these contracts.</p>
+
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Chain</th>
+<th>Price</th>
+<th>Liquidity</th>
+<th>24h Volume</th>
+<th>Price Change</th>
+<th>Risk Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MOON</strong><br><small>MoonRocket Token</small></td>
+<td>ethereum</td>
+<td>$0.000001</td>
+<td>$25,000</td>
+<td>$5,000</td>
+<td>📈 +150.5%</td>
+<td><strong>🔴 Critical</strong><br><small>(100/100)</small></td>
+</tr>
+<tr>
+<td><strong>DOGEELON</strong><br><small>DogeElon Mars</small></td>
+<td>ethereum</td>
+<td>$0.000000</td>
+<td>$15,000</td>
+<td>$2,500</td>
+<td>📈 +220.0%</td>
+<td><strong>🔴 Critical</strong><br><small>(100/100)</small></td>
+</tr>
+<tr>
+<td><strong>SVF</strong><br><small>SafeVault Finance</small></td>
+<td>bsc</td>
+<td>$0.000045</td>
+<td>$35,000</td>
+<td>$8,000</td>
+<td>📉 -45.2%</td>
+<td><strong>🟠 High</strong><br><small>(50/100)</small></td>
+</tr>
+<tr>
+<td><strong>CSH</strong><br><small>CryptoSafe Haven</small></td>
+<td>ethereum</td>
+<td>$0.000009</td>
+<td>$42,000</td>
+<td>$6,500</td>
+<td>📉 -78.5%</td>
+<td><strong>🟠 High</strong><br><small>(50/100)</small></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Risk Factors Explained</h3>
+<div class="risk-item">
+<p><strong>1. MOON</strong> - 🔴 Critical</p>
+<ul>
+<li>Low liquidity ($25,000)</li>
+<li>Low 24h volume ($5,000)</li>
+<li>Low transaction count (5)</li>
+<li>Extreme price volatility (+150.5%)</li>
+<li>Contract: <code>0x1234...5678...</code></li>
+<li><a href="https://dexscreener.com/ethereum/0x1234" target="_blank">View on DEX Screener</a></li>
+</ul>
+</div>
+<div class="risk-item">
+<p><strong>2. DOGEELON</strong> - 🔴 Critical</p>
+<ul>
+<li>Low liquidity ($15,000)</li>
+<li>Low 24h volume ($2,500)</li>
+<li>Low transaction count (3)</li>
+<li>Extreme price volatility (+220.0%)</li>
+<li>Contract: <code>0x9876...5432...</code></li>
+<li><a href="https://dexscreener.com/ethereum/0x9876" target="_blank">View on DEX Screener</a></li>
+</ul>
+</div>
+<div class="risk-item">
+<p><strong>3. SVF</strong> - 🟠 High</p>
+<ul>
+<li>Low liquidity ($35,000)</li>
+<li>Low 24h volume ($8,000)</li>
+<li>Contract: <code>0xabcd...efgh...</code></li>
+<li><a href="https://dexscreener.com/bsc/0xabcd" target="_blank">View on DEX Screener</a></li>
+</ul>
+</div>
+<div class="risk-item">
+<p><strong>4. CSH</strong> - 🟠 High</p>
+<ul>
+<li>Low liquidity ($42,000)</li>
+<li>Low 24h volume ($6,500)</li>
+<li>Contract: <code>0xaaaa...bbbb...</code></li>
+<li><a href="https://dexscreener.com/ethereum/0xaaaa" target="_blank">View on DEX Screener</a></li>
+</ul>
+</div>
+<h3>Methodology</h3>
+<p><strong>Risk score calculation (0-100):</strong></p>
+<ul>
+<li><strong>Low liquidity</strong> (&lt;$50k): +30 points</li>
+<li><strong>Very low volume</strong> (&lt;$10k): +20 points</li>
+<li><strong>Low transaction count</strong> (&lt;10): +30 points</li>
+<li><strong>Extreme volatility</strong> (&gt;80%): +20 points</li>
+</ul>
+
+<p><strong>Risk Levels:</strong></p>
+<ul>
+<li>🔴 <strong>Critical</strong> (70-100): High probability of scam</li>
+<li>🟠 <strong>High</strong> (50-69): Suspicious characteristics</li>
+<li>🟡 <strong>Medium</strong> (30-49): Some risk factors present</li>
+<li>🟢 <strong>Low</strong> (0-29): Relatively normal</li>
+</ul>
+
+<p><em>Data source: DEX Screener API | Last updated: 2026-04-13 14:38 UTC</em></p>
+</div>
+<div class="section">
+<h2>📅 Token Unlock Alert (7d)</h2>
+<p><strong>⚠️ Warning</strong>: The following tokens have significant unlocks scheduled. 
+Large unlocks may create selling pressure. Consider risk management.</p>
+
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Unlock Amount</th>
+<th>Value (USD)</th>
+<th>% of Circulating</th>
+<th>Date</th>
+<th>Days Left</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>APT</strong><br><small>Aptos</small></td>
+<td>4,500,000</td>
+<td>$28,500,000</td>
+<td>8.5%</td>
+<td>2026-04-15</td>
+<td>1d</td>
+<td><strong>🔴 Critical</strong></td>
+</tr>
+<tr>
+<td><strong>ARB</strong><br><small>Arbitrum</small></td>
+<td>92,000,000</td>
+<td>$124,000,000</td>
+<td>3.2%</td>
+<td>2026-04-16</td>
+<td>2d</td>
+<td><strong>🔴 Critical</strong></td>
+</tr>
+<tr>
+<td><strong>OP</strong><br><small>Optimism</small></td>
+<td>24,000,000</td>
+<td>$42,000,000</td>
+<td>2.8%</td>
+<td>2026-04-18</td>
+<td>4d</td>
+<td><strong>🟠 High</strong></td>
+</tr>
+<tr>
+<td><strong>SUI</strong><br><small>Sui</small></td>
+<td>68,000,000</td>
+<td>$78,000,000</td>
+<td>5.2%</td>
+<td>2026-04-14</td>
+<td>0d</td>
+<td><strong>🔴 Critical</strong></td>
+</tr>
+<tr>
+<td><strong>IMX</strong><br><small>Immutable X</small></td>
+<td>32,000,000</td>
+<td>$18,500,000</td>
+<td>1.8%</td>
+<td>2026-04-19</td>
+<td>5d</td>
+<td><strong>🟡 Medium</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Impact Analysis</h3>
+<div class="unlock-item">
+<p><strong>1. APT (Aptos)</strong> - 🔴 Critical</p>
+<ul>
+<li><strong>Unlock Date</strong>: 2026-04-15 (1 days left)</li>
+<li><strong>Amount</strong>: 4,500,000 tokens ($28,500,000)</li>
+<li><strong>% of Circulating</strong>: 8.5%</li>
+<li><strong>Category</strong>: Team & Foundation</li>
+</ul>
+</div>
+<div class="unlock-item">
+<p><strong>2. ARB (Arbitrum)</strong> - 🔴 Critical</p>
+<ul>
+<li><strong>Unlock Date</strong>: 2026-04-16 (2 days left)</li>
+<li><strong>Amount</strong>: 92,000,000 tokens ($124,000,000)</li>
+<li><strong>% of Circulating</strong>: 3.2%</li>
+<li><strong>Category</strong>: Team & Advisors</li>
+</ul>
+</div>
+<div class="unlock-item">
+<p><strong>3. OP (Optimism)</strong> - 🟠 High</p>
+<ul>
+<li><strong>Unlock Date</strong>: 2026-04-18 (4 days left)</li>
+<li><strong>Amount</strong>: 24,000,000 tokens ($42,000,000)</li>
+<li><strong>% of Circulating</strong>: 2.8%</li>
+<li><strong>Category</strong>: Ecosystem Fund</li>
+</ul>
+</div>
+<div class="unlock-item">
+<p><strong>4. SUI (Sui)</strong> - 🔴 Critical</p>
+<ul>
+<li><strong>Unlock Date</strong>: 2026-04-14 (0 days left)</li>
+<li><strong>Amount</strong>: 68,000,000 tokens ($78,000,000)</li>
+<li><strong>% of Circulating</strong>: 5.2%</li>
+<li><strong>Category</strong>: Community Reserve</li>
+</ul>
+</div>
+<div class="unlock-item">
+<p><strong>5. IMX (Immutable X)</strong> - 🟡 Medium</p>
+<ul>
+<li><strong>Unlock Date</strong>: 2026-04-19 (5 days left)</li>
+<li><strong>Amount</strong>: 32,000,000 tokens ($18,500,000)</li>
+<li><strong>% of Circulating</strong>: 1.8%</li>
+<li><strong>Category</strong>: Private Sale</li>
+</ul>
+</div>
+<h3>Impact Levels Explained</h3>
+<ul>
+<li>🔴 <strong>Critical</strong>: &gt;5% of circulating supply OR &gt;$50M value - High probability of significant price impact</li>
+<li>🟠 <strong>High</strong>: 2-5% of circulating supply OR $20-50M value - Moderate selling pressure expected</li>
+<li>🟡 <strong>Medium</strong>: 1-2% of circulating supply OR $10-20M value - Some selling pressure possible</li>
+<li>🟢 <strong>Low</strong>: &lt;1% of circulating supply AND &lt;$10M value - Minimal market impact expected</li>
+</ul>
+
+<h3>Strategy Recommendations</h3>
+<p><strong>Before Unlock</strong>: Consider taking profits, set stop-loss orders, monitor sentiment</p>
+<p><strong>During Unlock</strong>: Watch for volume spikes, check exchange deposits, prepare for volatility</p>
+
+<p><em>Data source: TokenUnlocks API | Last updated: 2026-04-13 14:38 UTC</em></p>
+</div>
+<div class="section">
+<h2>🔒 Contract Security Scan</h2>
+<p><strong>⚠️ Important</strong>: This scan provides automated risk assessment only. 
+Always conduct additional due diligence before investing.</p>
+
+<table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Chain</th>
+<th>Risk Level</th>
+<th>Issues</th>
+<th>Warnings</th>
+<th>Holders</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MOON</strong><br><small>MoonRocket Token</small></td>
+<td>ethereum</td>
+<td><strong>🔴 Critical</strong></td>
+<td>3</td>
+<td>2</td>
+<td>45</td>
+</tr>
+<tr>
+<td><strong>MOON</strong><br><small>MoonRocket Token</small></td>
+<td>bsc</td>
+<td><strong>🔴 Critical</strong></td>
+<td>3</td>
+<td>2</td>
+<td>45</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Detailed Analysis</h3>
+<div class="contract-item">
+<p><strong>1. MOON (MoonRocket Token)</strong> - 🔴 Critical</p>
+<ul>
+<li><strong>Contract</strong>: <code>0x1234567890abcdef1234567890abcdef12345678</code></li>
+<li><strong>Chain</strong>: ethereum</li>
+<li><strong>Holders</strong>: 45</li>
+<li><strong>Total Supply</strong>: 1,000,000,000</li>
+</ul>
+<p><strong>Critical Issues:</strong></p><ul><li>🔴 Honeypot detected</li><li>🔴 Hidden owner (can mint unlimited)</li><li>🟠 Transfer can be paused by owner</li></ul><p><strong>Warnings:</strong></p><ul><li>🟡 Trading cooldown enabled</li><li>🟢 Proxy contract (upgradeable)</li></ul><p><strong>Top Holders:</strong></p><ul><li><code>0x1234...5678</code>: 500,000,000 (50%)</li><li><code>0xabcd...efgh</code>: 200,000,000 (20%)</li></ul></div><div class="contract-item">
+<p><strong>2. MOON (MoonRocket Token)</strong> - 🔴 Critical</p>
+<ul>
+<li><strong>Contract</strong>: <code>0xabcdef1234567890abcdef1234567890abcdef12</code></li>
+<li><strong>Chain</strong>: bsc</li>
+<li><strong>Holders</strong>: 45</li>
+<li><strong>Total Supply</strong>: 1,000,000,000</li>
+</ul>
+<p><strong>Critical Issues:</strong></p><ul><li>🔴 Honeypot detected</li><li>🔴 Hidden owner (can mint unlimited)</li><li>🟠 Transfer can be paused by owner</li></ul><p><strong>Warnings:</strong></p><ul><li>🟡 Trading cooldown enabled</li><li>🟢 Proxy contract (upgradeable)</li></ul><p><strong>Top Holders:</strong></p><ul><li><code>0x1234...5678</code>: 500,000,000 (50%)</li><li><code>0xabcd...efgh</code>: 200,000,000 (20%)</li></ul></div><h3>Risk Level Guide</h3>
+<ul>
+<li>🔴 <strong>Critical</strong>: Multiple severe risks. High probability of scam.</li>
+<li>🟠 <strong>High</strong>: Significant risks present. Exercise extreme caution.</li>
+<li>🟡 <strong>Medium</strong>: Some risks detected. Additional research recommended.</li>
+<li>🟢 <strong>Low</strong>: Minor concerns only. Relatively safer but still DYOR.</li>
+<li>✅ <strong>Safe</strong>: No major risks detected. Standard due diligence required.</li>
+</ul>
+
+<p><em>Data source: GoPlus Security API | Last updated: 2026-04-13 14:38 UTC</em></p>
+</div>
+
+        <footer style="text-align: center; padding: 20px; color: #8b9dc3; border-top: 1px solid #2a3f5f; margin-top: 30px;">
+            <p>Crypto Risk Radar v6.2 | Data sources: DEX Screener, TokenUnlocks, GoPlus, CoinGecko</p>
+            <p><em>This report is for informational purposes only. Always DYOR.</em></p>
+        </footer>
+    </div>
+</body>
+</html>

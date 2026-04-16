@@ -1,0 +1,35 @@
+0x742d35Cc6634C0532925a3b844Bc9e7595f8dEe
+FAKEAI
+1
+
+[GoPlus]
+is_honeypot: YES
+sell_tax: 15
+buy_tax: 0
+hidden_owner: YES
+is_open_source: NO
+is_mintable: YES
+
+[DEX]
+liquidity_usd: 45000
+volume_24h: 320000
+lp_locked: NO
+lp_holders: 3
+
+[Etherscan]
+total_holders: 156
+top10_percentage: 78.5
+top50_percentage: 95.2
+
+[Marketing]
+promises_high_returns: YES
+uses_viral_marketing: YES
+narrative_consistency: contradictory
+
+
+Y
+Y
+Y
+AI-powered next-gen blockchain, listing on Binance soon, 100x returns
+Contract has honeypot, investors cannot sell, liquidity can be withdrawn anytime
+Q

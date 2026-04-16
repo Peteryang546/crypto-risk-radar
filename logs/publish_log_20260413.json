@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-04-13T08:51:15.132832",
+    "status": "success",
+    "platform": "github_pages",
+    "report_file": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\v60_html_report_20260413_0851.md",
+    "cleaned_file": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\publish_v60_html_report_20260413_0851.md",
+    "urls": {
+      "site_url": "https://peteryang546.github.io/crypto-risk-radar/",
+      "report_url": "https://peteryang546.github.io/crypto-risk-radar/reports/report-2026-04-13-morning.html"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T08:59:39.119477",
+    "status": "success",
+    "platform": "github_pages",
+    "report_file": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\v60_html_report_20260413_0859.md",
+    "html_file": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\v60_html_report_20260413_0859.html",
+    "seo_file": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\seo_v60_html_report_20260413_0859.html",
+    "urls": {
+      "site_url": "https://peteryang546.github.io/crypto-risk-radar/",
+      "report_url": "https://peteryang546.github.io/crypto-risk-radar/reports/report-2026-04-13-morning.html"
+    }
+  },
+  {
+    "timestamp": "2026-04-13T14:24:04.467219",
+    "status": "success",
+    "version": "6.2",
+    "mode": "demo",
+    "base_report": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\v60_html_report_20260413_1424.md",
+    "integrated_report": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\integrated_report_20260413_1424.html"
+  },
+  {
+    "timestamp": "2026-04-13T14:38:04.985880",
+    "status": "success",
+    "version": "6.2",
+    "mode": "demo",
+    "base_report": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\v60_html_report_20260413_1438.md",
+    "integrated_report": "F:\\stepclaw\\agents\\blockchain-analyst\\output\\integrated_report_20260413_1438.html"
+  }
+]

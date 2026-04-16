@@ -1,0 +1,147 @@
+name: Generate Crypto Risk Radar Report v9.0
+
+on:
+  schedule:
+    # Run at 02:00, 10:00, 18:00 UTC (10:00, 18:00, 02:00 CST)
+    - cron: '0 2,10,18 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests matplotlib pandas certifi urllib3
+        
+    - name: Run report generation script (Attempt 1)
+      id: attempt1
+      env:
+        COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "=== Attempt 1/5 ==="
+        python scripts/generate_enhanced_full_report.py --live
+      continue-on-error: true
+      
+    - name: Run report generation script (Attempt 2)
+      id: attempt2
+      if: steps.attempt1.outcome == 'failure'
+      env:
+        COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "=== Attempt 1 failed, retrying (2/5) ==="
+        sleep 30
+        python scripts/generate_enhanced_full_report.py --live
+      continue-on-error: true
+      
+    - name: Run report generation script (Attempt 3)
+      id: attempt3
+      if: steps.attempt2.outcome == 'failure'
+      env:
+        COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "=== Attempt 2 failed, retrying (3/5) ==="
+        sleep 60
+        python scripts/generate_enhanced_full_report.py --live
+      continue-on-error: true
+      
+    - name: Run report generation script (Attempt 4)
+      id: attempt4
+      if: steps.attempt3.outcome == 'failure'
+      env:
+        COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "=== Attempt 3 failed, retrying (4/5) ==="
+        sleep 120
+        python scripts/generate_enhanced_full_report.py --live
+      continue-on-error: true
+      
+    - name: Run report generation script (Attempt 5)
+      id: attempt5
+      if: steps.attempt4.outcome == 'failure'
+      env:
+        COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "=== Attempt 4 failed, final retry (5/5) ==="
+        sleep 180
+        python scripts/generate_enhanced_full_report.py --live
+      continue-on-error: true
+      
+    - name: Check final status
+      id: final_status
+      run: |
+        if [ "${{ steps.attempt1.outcome }}" == "success" ] || \
+           [ "${{ steps.attempt2.outcome }}" == "success" ] || \
+           [ "${{ steps.attempt3.outcome }}" == "success" ] || \
+           [ "${{ steps.attempt4.outcome }}" == "success" ] || \
+           [ "${{ steps.attempt5.outcome }}" == "success" ]; then
+          echo "status=success" >> $GITHUB_OUTPUT
+          echo "✅ Report generation succeeded!"
+        else
+          echo "status=failure" >> $GITHUB_OUTPUT
+          echo "❌ All 5 attempts failed!"
+          exit 1
+        fi
+        
+    - name: Copy latest report to index.html
+      if: steps.final_status.outputs.status == 'success'
+      run: |
+        # Find the latest generated report
+        latest_report=$(ls -t output/*.html | head -1)
+        if [ -n "$latest_report" ]; then
+          cp "$latest_report" output/index.html
+          echo "Copied $latest_report to output/index.html"
+        fi
+        
+    - name: Deploy to GitHub Pages
+      if: steps.final_status.outputs.status == 'success'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        publish_branch: gh-pages
+        
+    - name: Upload artifacts
+      if: steps.final_status.outputs.status == 'success'
+      uses: actions/upload-artifact@v4
+      with:
+        name: reports
+        path: output/
+        retention-days: 30
+        
+    - name: Notify success
+      if: steps.final_status.outputs.status == 'success'
+      run: |
+        echo "========================================"
+        echo "✅ CRYPTO RISK RADAR V9.0 - BUILD SUCCESS"
+        echo "========================================"
+        echo "Time: $(date)"
+        echo "Version: 9.0 (14 modules)"
+        echo "Status: All modules generated successfully"
+        echo "Website: https://peteryang546.github.io/crypto-risk-radar/"
+        echo "========================================"
+        
+    - name: Notify failure
+      if: steps.final_status.outputs.status == 'failure'
+      run: |
+        echo "========================================"
+        echo "❌ CRYPTO RISK RADAR V9.0 - BUILD FAILED"
+        echo "========================================"
+        echo "Time: $(date)"
+        echo "Please check the logs above for error details"
+        echo "========================================"

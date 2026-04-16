@@ -1,0 +1,6 @@
+  <url>
+    <loc>https://peteryang546.github.io/crypto-risk-radar/reports/seo_v60_html_report_20260413_0859.html</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>

@@ -1,0 +1,11 @@
+{
+  "kol_list": [
+    {"username": "CryptoGuru", "followers": 520000, "watch": true, "notes": "High frequency shiller"},
+    {"username": "MoonMaster", "followers": 310000, "watch": true, "notes": "Often promotes low-cap gems"},
+    {"username": "GemHunter", "followers": 280000, "watch": true, "notes": "Multiple suspicious dumps detected"},
+    {"username": "CryptoWizard", "followers": 150000, "watch": true, "notes": "Mixed signals"},
+    {"username": "SafeAnalysis", "followers": 89000, "watch": true, "notes": "Lower frequency, more conservative"}
+  ],
+  "keywords": ["moon", "100x", "gem", "buy now", "next big thing", "to the moon", "shill", "pump", "sale", "presale", "don't miss", "last chance"],
+  "exchanges": ["binance", "okx", "bybit", "kucoin", "gate.io", "mexc"]
+}

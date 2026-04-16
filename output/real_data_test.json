@@ -1,0 +1,28 @@
+{
+  "high_risk_tokens": [
+    {
+      "token": "API_ERROR",
+      "name": "Data Unavailable",
+      "price": 0,
+      "liquidity": 0,
+      "holders": 0,
+      "owner_percent": 0,
+      "risk_score": 0,
+      "note": "API temporarily unavailable - check back later"
+    }
+  ],
+  "security_threats": [],
+  "token_unlocks": [
+    {
+      "token": "API",
+      "name": "Data Unavailable",
+      "unlock_date": "N/A",
+      "amount": 0,
+      "value_usd": 0,
+      "note": "Token unlock API temporarily unavailable"
+    }
+  ],
+  "dormant_addresses": [],
+  "fetch_timestamp": "2026-04-14T11:21:48.363411",
+  "data_quality": "real"
+}

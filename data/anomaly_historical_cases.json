@@ -1,0 +1,64 @@
+{
+  "historical_cases": [
+    {
+      "token": "$FAKEAI",
+      "date": "2026-03-15",
+      "category": "Confirmed Scam",
+      "claims": "AI-powered trading bot, guaranteed 100x returns, locked liquidity",
+      "facts": "Liquidity unlocked 2h after launch, dev wallet sold 80% within 24h, no AI code in contract",
+      "loss_estimate": "$2.3M",
+      "red_flags": ["Fake lock", "Dev dump", "Empty promises"],
+      "source": "Etherscan + GoPlus"
+    },
+    {
+      "token": "$RUGPULL",
+      "date": "2026-03-22",
+      "category": "Rug Pull",
+      "claims": "Community-driven, fair launch, no team tokens",
+      "facts": "Team controlled 60% via hidden wallets, removed liquidity in 48h",
+      "loss_estimate": "$890K",
+      "red_flags": ["Hidden ownership", "Rapid liquidity removal", "Fake community"],
+      "source": "On-chain analysis"
+    },
+    {
+      "token": "$PONZI",
+      "date": "2026-04-01",
+      "category": "Ponzi Scheme",
+      "claims": "Staking rewards 10% daily, referral bonuses",
+      "facts": "No staking mechanism in contract, rewards paid from new deposits, unable to withdraw",
+      "loss_estimate": "$1.5M",
+      "red_flags": ["Unsustainable yields", "No real staking", "Withdrawal blocked"],
+      "source": "Contract audit"
+    },
+    {
+      "token": "$HONEYPOT",
+      "date": "2026-04-05",
+      "category": "Honeypot",
+      "claims": "Next SHIB, 1000x potential, buy now",
+      "facts": "Buy tax 0%, sell tax 99%, only dev can sell, contract unverified",
+      "loss_estimate": "$450K",
+      "red_flags": ["99% sell tax", "Unverified contract", "Dev-only selling"],
+      "source": "GoPlus Security"
+    }
+  ],
+  "detection_rules": {
+    "extreme_risk": [
+      "Confirmed honeypot (cannot sell)",
+      "Confirmed rug pull (liquidity removed)",
+      "Dev wallet sold >50% within 24h",
+      "Contract contains malicious code"
+    ],
+    "high_risk": [
+      "Liquidity < $50k",
+      "Top 10 holders > 50%",
+      "Contract not verified",
+      "Hidden owner permissions",
+      "No real utility/code"
+    ],
+    "medium_risk": [
+      "Declining volume > 50% in 7d",
+      "Social sentiment turning negative",
+      "Unlock approaching > 10% supply"
+    ]
+  }
+}

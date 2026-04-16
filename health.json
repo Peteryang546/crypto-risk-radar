@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-16T02:07:43.562285",
+  "timestamp": "2026-04-16T02:11:35.937746",
   "status": "critical",
   "checks": [
     {
@@ -13,7 +13,7 @@
       "name": "GoPlus Security",
       "status": "ok",
       "message": "API responding",
-      "latency_ms": 4724.312,
+      "latency_ms": 1935.798,
       "data_count": 1
     },
     {
@@ -35,6 +35,6 @@
     "total": 4,
     "healthy": 1,
     "errors": 3,
-    "avg_latency_ms": 1181.078
+    "avg_latency_ms": 483.9495
   }
 }

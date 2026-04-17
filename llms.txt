@@ -49,16 +49,17 @@ Every 8 hours: 02:00, 10:00, 18:00 CST (China Standard Time)
 
 ## API Endpoints
 - **Main Report**: https://peteryang546.github.io/crypto-risk-radar/
-- **Prediction Log**: https://peteryang546.github.io/crypto-risk-radar/prediction_log.html (20 historical cases with accuracy tracking)
+- **Historical Case Log**: https://peteryang546.github.io/crypto-risk-radar/prediction_log.html (20 verified historical cases, 2011-2021)
 - **Classification Dashboard**: https://peteryang546.github.io/crypto-risk-radar/classification_dashboard.html (7-category token classification)
 - **Case Studies**: https://peteryang546.github.io/crypto-risk-radar/case_studies/ (Pattern analysis library)
-- **JSON API**: https://peteryang546.github.io/crypto-risk-radar/api/predictions.json (Structured prediction data)
+- **JSON API**: https://peteryang546.github.io/crypto-risk-radar/api/predictions.json (Structured historical data)
 
-## Prediction Accuracy
-- **Overall**: 100% (22/22 verified predictions)
-- **Last 30 Days**: 100% (3/3)
-- **Historical Cases**: 20 documented scams with on-chain evidence
-- See full log: https://peteryang546.github.io/crypto-risk-radar/prediction_log.html
+## Historical Case Documentation
+- **Total Cases**: 20 verified historical events (2011-2021)
+- **Coverage**: Exit scams, flash loan attacks, contract exploits, exchange hacks
+- **Evidence**: On-chain transaction hashes and contract addresses where available
+- **Purpose**: Pattern recognition and educational reference
+- **Disclaimer**: Historical documentation only, not predictive claims
 
 ## Methodology
 Detailed methodology available at: https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY_ENHANCED.md

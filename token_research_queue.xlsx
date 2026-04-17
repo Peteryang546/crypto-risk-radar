@@ -1,0 +1,11 @@
+Token Name,Contract Address,Chain,Discovery Date,Category,Status,Notes,Research URL
+Bitcoin (BTC),N/A - Native,Bitcoin,2009-01-03,2 - Digital Commodity,已发布,First decentralized cryptocurrency. PoW consensus. 21M supply cap.,https://bitcoin.org
+Ethereum (ETH),N/A - Native,Ethereum,2015-07-30,3 - Smart Contract Platform,已发布,Leading smart contract platform. PoS consensus. Gas fee model.,https://ethereum.org
+Dogecoin (DOGE),N/A - Native,Dogecoin,2013-12-06,1 - Pure Sentiment Asset,已发布,Meme coin with no utility. Community-driven. Inflationary supply.,https://dogecoin.com
+Tether (USDT),0xdAC17F958D2ee523a2206206994597C13D831ec7,Ethereum,2014-10-06,4 - Fiat Proxy (Stablecoin),已发布,Largest stablecoin by market cap. Centralized issuer. Requires audit trust.,https://tether.to
+USD Coin (USDC),0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48,Ethereum,2018-09-10,4 - Fiat Proxy (Stablecoin),已发布,Regulated stablecoin. Monthly attestations. Circle issuer.,https://www.circle.com/en/usdc
+Solana (SOL),N/A - Native,Solana,2020-03-20,3 - Smart Contract Platform,已发布,High-performance L1. Proof of History. Low fees.,https://solana.com
+Binance Coin (BNB),N/A - Native,BSC,2017-07-08,3 - Smart Contract Platform,已发布,Exchange token + BSC gas. Centralized foundation.,https://www.bnbchain.org
+Shiba Inu (SHIB),0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE,Ethereum,2020-08-01,1 - Pure Sentiment Asset,已发布,Dogecoin competitor. Meme token. High concentration.,https://shibatoken.com
+PEPE (PEPE),0x6982508145454Ce325dDbE47a25d4ec3d2311933,Ethereum,2023-04-14,1 - Pure Sentiment Asset,已发布,Meme coin based on Pepe the Frog. No utility. Pure speculation.,https://www.pepe.vip
+Dai (DAI),0x6B175474E89094C44Da98b954EedeAC495271d0F,Ethereum,2017-12-18,4 - Fiat Proxy (Stablecoin),已发布,Decentralized stablecoin. Over-collateralized. MakerDAO protocol.,https://makerdao.com

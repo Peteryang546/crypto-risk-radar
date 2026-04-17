@@ -91,22 +91,33 @@ Each case study follows a standardized format:
 ### Template (1 case)
 20. **APT Unlock** - Token Unlock - Pattern tracking
 
+## Quick Links
+
+### Related Resources
+- [📊 Main Dashboard](https://peteryang546.github.io/crypto-risk-radar/) - Real-time risk reports
+- [🎯 Prediction Log](https://peteryang546.github.io/crypto-risk-radar/prediction_log.html) - Warning accuracy tracking
+- [📋 Classification](https://peteryang546.github.io/crypto-risk-radar/classification_dashboard.html) - Token categories
+- [📖 Methodology](https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY_ENHANCED.md) - Risk scoring framework
+
 ## Usage Guide
 
 ### For Investors
 1. Review relevant pattern before investing
 2. Use detection checklist
 3. Apply prevention measures
+4. Check [prediction log](https://peteryang546.github.io/crypto-risk-radar/prediction_log.html) for recent warnings
 
 ### For Developers
 1. Study vulnerability patterns
 2. Implement prevention code
 3. Follow security best practices
+4. Review [methodology](https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY_ENHANCED.md) for risk models
 
 ### For Analysts
 1. Use pattern matching for new cases
 2. Contribute new case studies
 3. Update detection frameworks
+4. Cross-reference with [main report](https://peteryang546.github.io/crypto-risk-radar/) data
 
 ## Contributing
 

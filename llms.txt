@@ -1,0 +1,58 @@
+# Crypto Risk Radar
+
+## About
+Independent on-chain risk monitoring system for cryptocurrency markets. Educational purpose only, not investment advice. Updated every 8 hours.
+
+## Core Modules
+1. **Market Overview**: BTC/ETH price, market cap dominance, fear & greed index
+2. **Orderbook Structure**: Bid depth decay, ask uniformity, spoofing probability
+3. **Exchange Netflow**: 24h/7d/30d BTC inflows/outflows with exchange breakdown
+4. **Dormant Address Activity**: >365 days inactive addresses waking up
+5. **Token Unlock Schedule**: Upcoming large unlocks with % of circulating supply
+6. **High Risk Token Watchlist**: DEX tokens with low liquidity, high concentration
+7. **Contract Security Scanner**: GoPlus risk scores (honeypot, hidden owner, blacklist)
+8. **On-Chain Pattern Observations**: Correlations between social signals and on-chain activity
+9. **Self-Protection Guide**: Practical steps to verify tokens before investing
+10. **Market Anomaly Index**: Composite 0-2.0 score indicating market manipulation risk
+11. **Quantum Computing Threat Monitor**: Long-term cryptographic risk assessment
+12. **Risk Heatmap**: Visual comparison of 6 major assets across 5 risk dimensions
+13. **Risk Matrix**: 4x4 Likelihood-Impact assessment of key risk factors
+14. **On-Chain Anomaly Fact Sheet**: Project claims vs. on-chain reality comparison
+
+## Data Sources
+- Etherscan (Ethereum blockchain data)
+- Binance (exchange flows, orderbook)
+- CoinGecko (market data, prices)
+- GoPlus Security (contract security analysis)
+- GeckoTerminal (DEX liquidity data)
+- DEX Screener (token distribution)
+
+## Update Frequency
+Every 8 hours: 02:00, 10:00, 18:00 CST (China Standard Time)
+
+## Core Principles
+- Present facts only, no conclusions
+- Do not predict price movements
+- Do not provide investment advice
+- Neutral observer standing by the pit with a lantern
+
+## Risk Classification System
+| Category | Risk Level | Description |
+|----------|------------|-------------|
+| Pure Sentiment Asset (Meme) | Extreme | No utility, narrative-driven value |
+| Digital Commodity | Low-Medium | Decentralized payment with hashrate/staking |
+| Smart Contract Platform | Medium | Computing resources, gas fees, dev ecosystem |
+| Fiat Proxy (Stablecoin) | Medium | Fiat-pegged, requires reserve audits |
+| Real World Asset (RWA) | Low | Tokenized real assets (bonds, real estate) |
+| Financial Security | Extreme | Depends on team effort, promises returns |
+| Pure Scam | 100% | Honeypot, unlocked liquidity, anonymous team |
+
+## Methodology
+Detailed methodology available at: https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY.md
+
+## Contact & Feedback
+- GitHub Issues: https://github.com/peteryang546/crypto-risk-radar/issues
+- Report Feedback: Use GitHub Issues with label "feedback"
+
+## License
+Content licensed under CC BY 4.0 - free to share and adapt with attribution.

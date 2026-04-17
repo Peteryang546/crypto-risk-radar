@@ -5,13 +5,28 @@
     <link>https://peteryang546.github.io/crypto-risk-radar/</link>
     <description>Automated 8-hourly blockchain risk monitoring and analysis</description>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Apr 2026 02:01:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2026 10:01:00 +0000</lastBuildDate>
     <atom:link href="https://peteryang546.github.io/crypto-risk-radar/feed.xml" rel="self" type="application/rss+xml" />
     <image>
         <url>https://peteryang546.github.io/crypto-risk-radar/logo.png</url>
         <title>Crypto Risk Radar</title>
         <link>https://peteryang546.github.io/crypto-risk-radar/</link>
     </image>
+
+    <item>
+        <title>Crypto Risk Radar - 2026-04-17 06:00 ET</title>
+        <link>https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260417_0600.html</link>
+        <guid isPermaLink="true">https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260417_0600.html</guid>
+        <pubDate>Fri, 17 Apr 2026 06:00:00 +0000</pubDate>
+        <description><![CDATA[
+            <p>Automated blockchain risk monitoring report for 2026-04-17.</p>
+            <p>Updated risk analysis with latest market data and security scans.</p>
+            <p><a href="https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260417_0600.html">View Full Report</a></p>
+        ]]></description>
+        <category>Blockchain</category>
+        <category>Crypto</category>
+        <category>Risk Analysis</category>
+    </item>
 
     <item>
         <title>Crypto Risk Radar - 2026-04-16 22:00 ET</title>
@@ -292,21 +307,6 @@
             <p>Automated blockchain risk monitoring report for 2026-04-14.</p>
             <p>Updated risk analysis with latest market data and security scans.</p>
             <p><a href="https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260414_2055.html">View Full Report</a></p>
-        ]]></description>
-        <category>Blockchain</category>
-        <category>Crypto</category>
-        <category>Risk Analysis</category>
-    </item>
-
-    <item>
-        <title>Crypto Risk Radar - 2026-04-14 20:47 ET</title>
-        <link>https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260414_2047.html</link>
-        <guid isPermaLink="true">https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260414_2047.html</guid>
-        <pubDate>Tue, 14 Apr 2026 20:47:00 +0000</pubDate>
-        <description><![CDATA[
-            <p>Automated blockchain risk monitoring report for 2026-04-14.</p>
-            <p>Updated risk analysis with latest market data and security scans.</p>
-            <p><a href="https://peteryang546.github.io/crypto-risk-radar/reports/enhanced_report_20260414_2047.html">View Full Report</a></p>
         ]]></description>
         <category>Blockchain</category>
         <category>Crypto</category>

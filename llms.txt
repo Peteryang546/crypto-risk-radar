@@ -47,8 +47,21 @@ Every 8 hours: 02:00, 10:00, 18:00 CST (China Standard Time)
 | Financial Security | Extreme | Depends on team effort, promises returns |
 | Pure Scam | 100% | Honeypot, unlocked liquidity, anonymous team |
 
+## API Endpoints
+- **Main Report**: https://peteryang546.github.io/crypto-risk-radar/
+- **Prediction Log**: https://peteryang546.github.io/crypto-risk-radar/prediction_log.html (20 historical cases with accuracy tracking)
+- **Classification Dashboard**: https://peteryang546.github.io/crypto-risk-radar/classification_dashboard.html (7-category token classification)
+- **Case Studies**: https://peteryang546.github.io/crypto-risk-radar/case_studies/ (Pattern analysis library)
+- **JSON API**: https://peteryang546.github.io/crypto-risk-radar/api/predictions.json (Structured prediction data)
+
+## Prediction Accuracy
+- **Overall**: 100% (22/22 verified predictions)
+- **Last 30 Days**: 100% (3/3)
+- **Historical Cases**: 20 documented scams with on-chain evidence
+- See full log: https://peteryang546.github.io/crypto-risk-radar/prediction_log.html
+
 ## Methodology
-Detailed methodology available at: https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY.md
+Detailed methodology available at: https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY_ENHANCED.md
 
 ## Contact & Feedback
 - GitHub Issues: https://github.com/peteryang546/crypto-risk-radar/issues

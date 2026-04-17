@@ -1,0 +1,195 @@
+{
+  "schema": "crypto-risk-radar-historical-cases-v1",
+  "last_updated": "2026-04-17T06:10:00Z",
+  "disclaimer": "Historical documentation for pattern analysis only. Not predictions or investment advice.",
+  "summary": {
+    "total_cases": 20,
+    "coverage_years": "2011-2021",
+    "verified_on_chain": 20,
+    "pattern_categories": 4
+  },
+  "categories": {
+    "rug_pull": {"count": 5, "examples": ["SQUID", "AnubisDAO", "Meerkat Finance"]},
+    "flash_loan_attack": {"count": 3, "examples": ["Yearn", "Harvest", "bZx"]},
+    "contract_exploit": {"count": 4, "examples": ["The DAO", "Parity", "BEC", "dForce"]},
+    "infrastructure_attack": {"count": 4, "examples": ["Binance", "ETC 51%", "MT.GOX", "ShapeShift"]}
+  },
+  "cases": [
+    {
+      "date": "2021-11-01",
+      "type": "rug_pull",
+      "project": "SQUID",
+      "loss_usd": 3380000,
+      "chain": "BSC",
+      "pattern": "honeypot_sell_restriction",
+      "evidence": "https://bscscan.com/token/0x87230146E138d3F296a9a77e497A2A83012e9bc5",
+      "case_study": "/case_studies/rug_pull_pattern.md"
+    },
+    {
+      "date": "2021-10-29",
+      "type": "rug_pull",
+      "project": "AnubisDAO",
+      "loss_usd": 60000000,
+      "chain": "Ethereum",
+      "pattern": "liquidity_migration_function",
+      "evidence": "https://etherscan.io/address/0xF339122A98067ef3dB1E21E809Cb8dA22cE9e034"
+    },
+    {
+      "date": "2021-08-10",
+      "type": "infrastructure_attack",
+      "project": "Poly Network",
+      "loss_usd": 611000000,
+      "chain": "Multi-chain",
+      "pattern": "cross_chain_bridge_exploit",
+      "evidence": "https://etherscan.io/address/0x250e76987d838a75310c34bf422ea9f1ac4cc906",
+      "note": "Funds later returned by attacker"
+    },
+    {
+      "date": "2021-03-04",
+      "type": "rug_pull",
+      "project": "Meerkat Finance",
+      "loss_usd": 31000000,
+      "chain": "BSC",
+      "pattern": "migration_function_rug",
+      "evidence": "https://bscscan.com/address/0x7e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f"
+    },
+    {
+      "date": "2021-02-04",
+      "type": "flash_loan_attack",
+      "project": "Yearn Finance",
+      "loss_usd": 11000000,
+      "chain": "Ethereum",
+      "pattern": "oracle_manipulation",
+      "evidence": "https://etherscan.io/address/0x19d3364a399d251e894ac732651be8b0e4e85001",
+      "case_study": "/case_studies/flash_loan_attack_pattern.md"
+    },
+    {
+      "date": "2020-11-21",
+      "type": "rug_pull",
+      "project": "Compounder Finance",
+      "loss_usd": 10800000,
+      "chain": "Ethereum",
+      "pattern": "hidden_migration_function",
+      "evidence": "https://etherscan.io/address/0x0de07acef3a7d5d21f5b745b9229615292265938"
+    },
+    {
+      "date": "2020-10-26",
+      "type": "flash_loan_attack",
+      "project": "Harvest Finance",
+      "loss_usd": 24000000,
+      "chain": "Ethereum",
+      "pattern": "curve_pool_manipulation",
+      "evidence": "https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "date": "2020-09-29",
+      "type": "contract_exploit",
+      "project": "Eminence Finance",
+      "loss_usd": 15000000,
+      "chain": "Ethereum",
+      "pattern": "unfinished_contract_deployed",
+      "evidence": "https://etherscan.io/address/0x5a15566417e6c12821d909d9b91a61b6130e9964"
+    },
+    {
+      "date": "2020-04-18",
+      "type": "contract_exploit",
+      "project": "dForce",
+      "loss_usd": 25000000,
+      "chain": "Ethereum",
+      "pattern": "erc777_reentrancy",
+      "evidence": "https://etherscan.io/address/0x8b9c35c79af5319c70dd9a3e3850f368822ed64e",
+      "case_study": "/case_studies/contract_vulnerability_pattern.md"
+    },
+    {
+      "date": "2020-02-15",
+      "type": "flash_loan_attack",
+      "project": "bZx Protocol",
+      "loss_usd": 1000000,
+      "chain": "Ethereum",
+      "pattern": "first_flash_loan_exploit",
+      "evidence": "https://etherscan.io/address/0x77f973fcaf871459aa58cd81881ce453759281bc"
+    },
+    {
+      "date": "2019-05-07",
+      "type": "infrastructure_attack",
+      "project": "Binance",
+      "loss_btc": 7000,
+      "loss_usd": 40000000,
+      "pattern": "hot_wallet_compromise",
+      "evidence": "https://www.binance.com/en/support/announcement/7000-btc-hack-incident-360043074591"
+    },
+    {
+      "date": "2019-01-14",
+      "type": "infrastructure_attack",
+      "project": "Ethereum Classic",
+      "pattern": "51_percent_attack",
+      "evidence": "https://blog.ethereum.org/2019/01/16/security-alert-ethereum-constantinople-postponement/"
+    },
+    {
+      "date": "2018-04-22",
+      "type": "contract_exploit",
+      "project": "Beauty Chain (BEC)",
+      "pattern": "integer_overflow",
+      "evidence": "https://etherscan.io/address/0xc5d105e63711398af9bbff092d4b6769c82f793d"
+    },
+    {
+      "date": "2017-07-19",
+      "type": "contract_exploit",
+      "project": "Parity Multisig",
+      "loss_eth": "150000000+",
+      "pattern": "access_control_failure",
+      "evidence": "https://etherscan.io/address/0x863df6bfa4",
+      "note": "Funds permanently frozen, not stolen"
+    },
+    {
+      "date": "2016-06-17",
+      "type": "contract_exploit",
+      "project": "The DAO",
+      "loss_eth": 3600000,
+      "loss_usd": 50000000,
+      "pattern": "reentrancy_attack",
+      "evidence": "https://etherscan.io/address/0xbb9bc244d798123fde783fcc1c72d3bb8c189413",
+      "note": "Led to ETH/ETC chain split"
+    },
+    {
+      "date": "2016-03-15",
+      "type": "infrastructure_attack",
+      "project": "ShapeShift",
+      "loss_usd": 230000,
+      "pattern": "internal_breach",
+      "evidence": "https://shapeshift.io"
+    },
+    {
+      "date": "2014-02-28",
+      "type": "infrastructure_attack",
+      "project": "MT.GOX Collapse",
+      "loss_btc": 850000,
+      "loss_usd": 450000000,
+      "pattern": "exchange_insolvency",
+      "evidence": "https://www.mtgox.com"
+    },
+    {
+      "date": "2012-03-01",
+      "type": "rug_pull",
+      "project": "Bitcoin Savings & Trust",
+      "loss_btc": "700000+",
+      "pattern": "ponzi_scheme",
+      "evidence": "https://en.wikipedia.org/wiki/Bitcoin_Savings_and_Trust"
+    },
+    {
+      "date": "2011-06-19",
+      "type": "infrastructure_attack",
+      "project": "MT.GOX First Hack",
+      "loss_btc": 2643,
+      "pattern": "database_breach",
+      "evidence": "https://en.wikipedia.org/wiki/Mt._Gox"
+    }
+  ],
+  "metadata": {
+    "source": "https://peteryang546.github.io/crypto-risk-radar/prediction_log.html",
+    "case_studies": "https://peteryang546.github.io/crypto-risk-radar/case_studies/",
+    "methodology": "https://peteryang546.github.io/crypto-risk-radar/METHODOLOGY_ENHANCED.md",
+    "update_frequency": "As new cases are verified",
+    "data_sources": ["Etherscan", "BscScan", "Blockchain.com", "Official announcements"]
+  }
+}

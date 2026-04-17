@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://peteryang546.github.io/crypto-risk-radar/sitemap.xml

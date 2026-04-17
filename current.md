@@ -1,6 +1,6 @@
 # Crypto Risk Radar - Latest Report
 
-**Last Updated**: April 17, 2026 14:00 ET
+**Last Updated**: April 17, 2026 22:00 ET
 
 **View Full Report**: [Click here](https://peteryang546.github.io/crypto-risk-radar/)
 

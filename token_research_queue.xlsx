@@ -9,3 +9,8 @@ Binance Coin (BNB),N/A - Native,BSC,2017-07-08,3 - Smart Contract Platform,已�
 Shiba Inu (SHIB),0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE,Ethereum,2020-08-01,1 - Pure Sentiment Asset,已发布,Dogecoin competitor. Meme token. High concentration.,https://shibatoken.com
 PEPE (PEPE),0x6982508145454Ce325dDbE47a25d4ec3d2311933,Ethereum,2023-04-14,1 - Pure Sentiment Asset,已发布,Meme coin based on Pepe the Frog. No utility. Pure speculation.,https://www.pepe.vip
 Dai (DAI),0x6B175474E89094C44Da98b954EedeAC495271d0F,Ethereum,2017-12-18,4 - Fiat Proxy (Stablecoin),已发布,Decentralized stablecoin. Over-collateralized. MakerDAO protocol.,https://makerdao.com
+Aptos (APT),N/A - Native,Aptos,2022-10-17,3 - Smart Contract Platform,待分析,High-performance L1. Move language. Large unlocks scheduled.,https://aptoslabs.com
+Arbitrum (ARB),0x912CE59144191C1204E64559FE8253a0e49E6548,Ethereum,2023-03-23,3 - Smart Contract Platform,待分析,Ethereum L2 scaling. DAO governance. Token unlocks tracked.,https://arbitrum.io
+Chainlink (LINK),0x514910771AF9Ca656af840dff83E8264EcF986CA,Ethereum,2017-09-19,3 - Smart Contract Platform,待分析,Oracle network. Decentralized data feeds. Staking v0.2.,https://chain.link
+Ripple (XRP),N/A - Native,XRP Ledger,2012-06-02,4 - Fiat Proxy (Stablecoin),待分析,Cross-border payments. Centralized foundation. Large unlocks.,https://ripple.com
+Stellar (XLM),N/A - Native,Stellar,2014-07-31,4 - Fiat Proxy (Stablecoin),待分析,Cross-border payments. Non-profit foundation. IBM partnership.,https://stellar.org

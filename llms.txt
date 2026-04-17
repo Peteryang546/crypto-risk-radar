@@ -15,9 +15,23 @@ Independent on-chain risk monitoring system for cryptocurrency markets. Educatio
 9. **Self-Protection Guide**: Practical steps to verify tokens before investing
 10. **Market Anomaly Index**: Composite 0-2.0 score indicating market manipulation risk
 11. **Quantum Computing Threat Monitor**: Long-term cryptographic risk assessment
-12. **Risk Heatmap**: Visual comparison of 6 major assets across 5 risk dimensions
+12. **Risk Heatmap**: **Static snapshot** comparing 6 major assets across 5 risk dimensions (snapshot, not prediction)
 13. **Risk Matrix**: 4x4 Likelihood-Impact assessment of key risk factors
 14. **On-Chain Anomaly Fact Sheet**: Project claims vs. on-chain reality comparison
+
+## Methodology: Pattern Recognition Approach
+
+We do not predict prices or future events. Instead, we:
+1. **Extract patterns** from 20+ verified historical cases (2011-2021)
+2. **Convert patterns to detection formulas** (checklists, indicators)
+3. **Apply formulas to new projects** for risk assessment
+4. **Verify through observation** and iterate the methodology
+
+### Example Pattern-to-Formula
+- **Pattern**: Honeypot tokens prevent selling
+- **Formula**: `sell_restriction == true AND owner_can_mint == true`
+- **Application**: Check contract code for transfer restrictions
+- **Verification**: Monitor if holders can actually sell
 
 ## Data Sources
 - Etherscan (Ethereum blockchain data)

@@ -1,7 +1,18 @@
 # Crypto Risk Radar - Case Study Library
 
 ## Purpose
-Structured analysis of historical crypto scams and exploits to identify patterns, warning signs, and prevention strategies.
+Structured analysis of historical crypto scams and exploits to **extract reusable risk patterns** and build a **practical risk control methodology** for ordinary investors.
+
+### Core Philosophy
+- **Pattern Recognition, Not Prediction**: We analyze historical cases to identify recurring attack patterns, not to predict future prices
+- **Static Observation, Dynamic Verification**: Tools provide snapshots; patterns are used to analyze new projects, then verified through observation
+- **Neutral Observer**: We present facts and patterns, not conclusions or investment advice
+
+### Methodology
+```
+Historical Cases → Pattern Extraction → Detection Formulas → 
+New Project Analysis → Observation Verification → Iterative Improvement
+```
 
 ## Case Study Structure
 
@@ -127,12 +138,36 @@ To add a new case study:
 3. Include real transaction hashes
 4. Add to pattern index
 
+## Risk Control Methodology
+
+### For New Project Analysis
+1. **Select Relevant Patterns**: Based on project type (DEX, lending, NFT, etc.)
+2. **Apply Detection Formulas**: Use checklists from pattern documents
+3. **Verify On-Chain**: Check contract code, liquidity, holder distribution
+4. **Document Findings**: Record observations for future verification
+5. **Iterate**: Update methodology based on verification results
+
+### Pattern-to-Formula Examples
+
+| Pattern | Detection Formula | Verification Method |
+|---------|-------------------|---------------------|
+| Honeypot | `sell_restriction == true AND owner_can_mint == true` | Attempt small sell transaction |
+| Liquidity Rug | `lp_unlock_time < 30_days AND owner_lp_percentage > 50%` | Monitor LP removal events |
+| Flash Loan Risk | `oracle_source == single_dex AND flash_loan_enabled == true` | Review oracle implementation |
+| Reentrancy | `external_call_before_state_update == true` | Static analysis + code review |
+
 ## Disclaimer
 
-All case studies are based on publicly available information. Analysis is for educational purposes only. Not financial advice.
+All case studies are based on publicly available information. Analysis is for **educational and pattern recognition purposes only**.
+
+- **Not Financial Advice**: We do not recommend any investments
+- **Not Predictions**: Historical patterns do not guarantee future outcomes
+- **Neutral Observer**: We present facts, not conclusions
+- **Verify Independently**: Always conduct your own research
 
 ---
 
 **Last Updated**: 2026-04-17
 **Total Cases**: 20
 **Pattern Categories**: 4
+**Methodology Status**: Active Development

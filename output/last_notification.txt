@@ -1,9 +1,11 @@
 
-CRYPTO RISK RADAR - RUN FAILED [ERR]
+CRYPTO RISK RADAR - RUN COMPLETE [OK]
 
-Status: FAILED
-Time: 2026-04-18T10:00:29
-Error: Report generation failed
+Status: SUCCESS
+Time: 2026-04-16T18:01:30
+Duration: 89.4 seconds
+Report: enhanced_report_20260416_1400.html
 
-Please check the system.
-Log: output/last_run.json
+Website: https://peteryang546.github.io/crypto-risk-radar/
+
+Next run: See schedule

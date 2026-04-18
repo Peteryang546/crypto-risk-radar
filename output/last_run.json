@@ -1,15 +1,23 @@
 {
-  "timestamp": "2026-04-18T10:00:29.325258",
-  "status": "error",
+  "timestamp": "2026-04-16T18:01:30.272927",
+  "status": "success",
   "details": {
-    "duration_seconds": 24.409314,
+    "duration_seconds": 89.406191,
     "steps": [
       {
         "name": "Generate",
+        "success": true
+      },
+      {
+        "name": "Publish",
+        "success": true
+      },
+      {
+        "name": "Health",
         "success": false
       }
     ],
-    "error": "Report generation failed",
-    "traceback": "Traceback (most recent call last):\n  File \"F:\\stepclaw\\agents\\blockchain-analyst\\run_with_notification.py\", line 65, in run_pipeline\n    raise Exception(\"Report generation failed\")\nException: Report generation failed\n"
+    "timestamp_et": "2026-04-16 18:01 ET",
+    "website": "https://peteryang546.github.io/crypto-risk-radar/"
   }
 }

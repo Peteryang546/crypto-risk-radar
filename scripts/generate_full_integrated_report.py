@@ -50,7 +50,7 @@ class FullIntegratedReportGenerator:
         self.data = {}
         self.report_data = {
             'timestamp': datetime.now().isoformat(),
-            'version': '6.2',
+            'version': '9.0',
             'mode': 'demo' if use_demo_data else 'live',
             'modules': {}
         }

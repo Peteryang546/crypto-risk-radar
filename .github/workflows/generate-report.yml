@@ -2,8 +2,9 @@ name: Generate Crypto Risk Radar Report
 
 on:
   schedule:
-    # Run at 00:00 and 12:00 UTC (08:00 and 20:00 Beijing Time)
-    - cron: '0 0,12 * * *'
+    # Run 3 times daily: 00:00, 10:00, 12:00 UTC
+    # Beijing Time: 08:00, 18:00, 20:00 CST
+    - cron: '0 0,10,12 * * *'
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
@@ -128,11 +129,12 @@ jobs:
       if: steps.final_status.outputs.status == 'success'
       run: |
         echo "========================================"
-        echo "✅ CRYPTO RISK RADAR - BUILD SUCCESS"
+        echo "✅ CRYPTO RISK RADAR V9.0 - BUILD SUCCESS"
         echo "========================================"
         echo "Time: $(date)"
-        echo "Status: All modules generated successfully"
+        echo "Status: All 12 modules generated with LIVE data"
         echo "Website: https://peteryang546.github.io/crypto-risk-radar/"
+        echo "Schedule: 3x daily (08:00, 18:00, 20:00 CST)"
         echo "========================================"
         
     - name: Notify failure

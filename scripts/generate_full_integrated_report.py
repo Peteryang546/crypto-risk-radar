@@ -62,9 +62,16 @@ class FullIntegratedReportGenerator:
         print("="*70)
         
         # Original data sources
-        if DATA_SOURCES_AVAILABLE and not self.use_demo_data:
+        if not self.use_demo_data:
+            # LIVE MODE: Must use real data, fail if unavailable
+            if not DATA_SOURCES_AVAILABLE:
+                raise RuntimeError("[ERROR] Live mode requires data_fetcher_ps module but it's not available. Cannot use demo data in live mode.")
+            
             try:
                 ps_data = get_data()
+                if not ps_data or 'btc_price' not in ps_data:
+                    raise RuntimeError("[ERROR] Failed to fetch live data from APIs. Cannot proceed with live mode.")
+                    
                 self.data['btc_price'] = ps_data.get('btc_price', {}).get('price', 73000)
                 self.data['btc_change'] = ps_data.get('btc_price', {}).get('change_24h', 0)
                 self.data['eth_price'] = ps_data.get('eth_price', {}).get('price', 3500)
@@ -91,11 +98,13 @@ class FullIntegratedReportGenerator:
                 self.data.setdefault('security_estimated_loss', 2300000)
                 self.data.setdefault('security_risk_level', 'Medium')
                 
-                print("[SUCCESS] Fetched data from original sources")
+                print("[SUCCESS] Fetched LIVE data from APIs")
             except Exception as e:
-                print(f"[WARNING] Failed to fetch from original sources: {e}")
-                self._generate_demo_data()
+                print(f"[ERROR] Failed to fetch live data: {e}")
+                raise RuntimeError(f"Live mode failed: {e}. Cannot use demo data.")
         else:
+            # DEMO MODE: Only allowed with explicit --demo flag
+            print("[WARNING] Using DEMO data - NOT FOR PRODUCTION")
             self._generate_demo_data()
         
         # New module data
